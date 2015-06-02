@@ -1,0 +1,14 @@
+<?php
+$colection = array_chunk($this->getSubCategoriesForProduct(), 3);
+?>
+<?php if(count($colection)>1):?>
+    <table class="sub-categories-for-product">
+        <?php for($i=0;$i<count($colection);$i++):?>
+        <tr>
+                <?php foreach($colection[$i] as $category):?>
+                     <td><a href="<?php echo $category['url_path']?>"><?php echo $category['name']?></a></td>
+                <?endforeach?>
+        </tr>
+        <?php endfor;?>
+    </table>
+<?php endif;?>

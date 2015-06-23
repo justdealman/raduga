@@ -1769,7 +1769,7 @@ if ( $('.scheme').length > 0 ) {
 		});
 		var r = Raphael($(this).find('.svg').attr('id'), w, h),
 		attributes = {
-			fill: 'transparent',
+			fill: '#ffffff',
 			opacity: 0,
 			'stroke-width': 0
 		},
@@ -1784,6 +1784,15 @@ if ( $('.scheme').length > 0 ) {
 					window.location.href = paths[arr[this.id]].href;
 				}
 			);
+			obj.hover(function() {
+				this.stop(true,true).animate({
+					opacity: '0.25'
+				}, 250);
+			}, function(){
+				this.stop(true,true).animate({
+					opacity: '0'
+				}, 250);
+			});
 		}
 	});
 	$('.scheme .plan ul.nav li a').bind('click', function(event) {

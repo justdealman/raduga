@@ -121,10 +121,10 @@ $(document).ready(function() {
 			current.find('div span:nth-child(1)').addClass('hover');
 			setTimeout(function() {
 				current.find('div span:nth-child(2)').addClass('hover');
-			}, 250);
+			}, 200);
 			setTimeout(function() {
 				current.find('div span:nth-child(3)').addClass('hover');
-			}, 500);
+			}, 400);
 		},
 		function() {
 			$(this).find('div span').removeClass('hover');
@@ -326,6 +326,28 @@ $(document).ready(function() {
 			event.stopPropagation();
 		});
 	}
+	$('.header h5 span').bind('click', function() {
+		$('.header .mallsel').css({
+			'left': $(this).offset().left+'px',
+			'top': $(this).offset().top+'px'
+		}).slideDown(200);
+	});
+	$('.header .mallsel p span').bind('click', function() {
+		$('.header .mallsel').slideUp(200);
+	});
+	$('html').click(function() {
+		$('.header .mallsel').slideUp(200);
+	});
+	$('.header .mallsel, .header h5 span').click(function(event){
+		event.stopPropagation();
+	});
+	if ( $('.stores .core .carousel') ) {
+		$('.stores .core .carousel').jcarousel({
+			scroll: 1,
+			animation: 500,
+			wrap: 'circular'
+		});
+	}
 });
 $(window).resize(function() {
 	if ( $('.introduction').length > 0 ) {
@@ -341,5 +363,8 @@ $(window).resize(function() {
 $(window).load(function() {
 	if ( $('.introduction').length > 0 ) {
 		introSize();
+	}
+	if ( $('.new-panel').length > 0 ) {
+		$('.new-panel').delay(1500).fadeIn(250);
 	}
 });

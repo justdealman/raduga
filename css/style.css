@@ -3166,3 +3166,77 @@ p.bubble:before {
 path:hover{
 	opacity:1;
 }
+
+.filter-modal {
+	display:none;
+	position:absolute;
+	left:0;
+	z-index:10;
+	width:100%;
+	margin-top:64px;
+	background:#ffffff;
+}
+.filter-modal > div {
+	position:relative;
+	width:960px;
+	color:#000000;
+	text-align:right;
+	padding:46px 0 23px;
+	margin:0 auto;
+}
+.filter-modal > div:before {
+	content:'';
+	position:absolute;
+	right:46px;
+	top:-14px;
+	border-bottom:14px solid #ffffff;
+	border-left:25px solid transparent;
+	border-right:25px solid transparent;
+}
+.filter-modal ul {
+	text-align:left;
+	padding:0 0 28px;
+	margin:0 0 23px;
+	border-bottom:1px solid #080626;
+}
+.filter-modal ul li {
+	position:relative;
+	display:inline-block;
+	width:209px;
+	font-size:14px;
+	line-height:17px;
+	vertical-align:top;
+	padding:0 0 0 18px;
+	margin:0 17px 9px 0;
+}
+.filter-modal ul li:nth-child(4n) {
+	margin-right:-13px;
+}
+.filter-modal ul li .checker {
+	position:absolute;
+	left:-6px;
+	top:1px;
+}
+.filter-modal button {
+	position:relative;
+	width:166px;
+	color:#080626;
+	font-size:14px;
+	line-height:17px;
+	text-align:center;
+	cursor:pointer;
+	padding:7px 10px 11px;
+	margin:0 0 23px -4px;
+	background:#ffffff;
+	border:1px solid #d8d8d8;
+	transition:all 0.2s ease-in-out;
+	-webkit-transition:all 0.2s ease-in-out;
+	-moz-transition:all 0.2s ease-in-out;
+	-o-transition:all 0.2s ease-in-out;
+}
+.filter-modal button:hover {
+	z-index:2;
+	color:#ffffff;
+	background:#080626;
+	border:1px solid #080626;
+}

@@ -3163,6 +3163,15 @@ p.bubble:before {
 .scheme .legend ul li span.t16:before {
 	background:#57311c;
 }
+.scheme .legend ul li span.t17:before {
+	background:#ffba00;
+}
+.scheme .legend ul li span.t18:before {
+	background:#883592;
+}
+.scheme .legend ul li span.t19:before {
+	background:#54215a;
+}
 path:hover{
 	opacity:1;
 }

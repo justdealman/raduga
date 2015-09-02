@@ -173,7 +173,17 @@ button::-moz-focus-inner {
 	-moz-box-shadow:0 0 8px rgba(0,0,0,0.3);
 	box-shadow:0 0 8px rgba(0,0,0,0.3);
 }
+.header.fixed {
+	position:fixed;
+	left:0;
+	top:0;
+	width:100%;
+}
+.header.fixed img.logo {
+	top:26px;
+}
 .section .header {
+	visibility:hidden;
 	height:55px;
 }
 .section:first-child .header {
@@ -534,7 +544,7 @@ button::-moz-focus-inner {
 	height:60px;
 	text-transform:uppercase;
 	padding:0;
-	margin:110px auto 50px;
+	margin:140px auto 50px;
 }
 .section .core {
 	clear:both;
@@ -987,7 +997,7 @@ button::-moz-focus-inner {
 }
 .special .search {
 	position:absolute;
-	top:155px;
+	top:185px;
 	right:50%;
 	width:170px;
 	margin-right:-480px;
@@ -2755,31 +2765,31 @@ p.bubble:before {
 
 @media screen and (max-height:980px) {
 	.enabled .section h1 {
-		margin:110px auto 50px;
+		margin:120px auto 50px;
 	}
 }
 @media screen and (max-height:940px) {
 	.enabled .section h1 {
-		margin:90px auto 50px;
+		margin:110px auto 50px;
 	}
 	.enabled .special .search {
-		top:135px;
+		top:155px;
 	}
 }
 @media screen and (max-height:920px) {
 	.enabled .section h1 {
-		margin:80px auto 30px;
+		margin:100px auto 30px;
 	}
 	.enabled .special .search {
-		top:125px;
+		top:145px;
 	}
 }
 @media screen and (max-height:900px) {
 	.enabled .section h1 {
-		margin:70px auto 20px;
+		margin:90px auto 20px;
 	}
 	.enabled .special .search {
-		top:115px;
+		top:135px;
 	}
 }
 @media screen and (max-height:860px) {

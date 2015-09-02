@@ -60,7 +60,15 @@ $(document).ready(function() {
 		if ( $(window).height() >= 600 && !/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
 			$('.wrapper').fullpage({
 				css3: true,
-				anchors: ['welcome', 'stores', 'special', 'gallery', 'contacts']
+				anchors: ['welcome', 'stores', 'special', 'gallery', 'contacts'],
+				onLeave: function(index, nextIndex, direction) {
+					if ( nextIndex == 1 ) {
+						$('.header ul li').removeClass('active');
+					}
+					else {
+						$('.header ul li:nth-child('+eval(nextIndex-1)+')').addClass('active').siblings().removeClass('active');
+					}
+				}
 			});
 			$.fn.fullpage.reBuild();
 			$('body').addClass('enabled');
@@ -75,11 +83,19 @@ $(document).ready(function() {
 	$('.disabled .header ul li a').bind('click', function(event) {
 		var target = $(this).attr('href').substr(1);
 		$('html, body').animate({ scrollTop: $('.section.'+target).position().top+'px' }, 750);
+		$(this).parent().addClass('active').siblings().removeClass('active');
 		event.preventDefault();
 	});
 	$('.disabled .header a[href="#welcome"]').bind('click', function(event) {
 		$('html, body').animate({ scrollTop: '0' }, 750);
+		$('.disabled .header ul li').removeClass('active');
 		event.preventDefault();
+	});
+	$('.enabled .header ul li a').bind('click', function() {
+		$(this).parent().addClass('active').siblings().removeClass('active');
+	});
+	$('.enabled .header a[href="#welcome"]').bind('click', function() {
+		$('.enabled .header ul li').removeClass('active');
 	});
 	if ( $('.introduction').length > 0 ) {
 		introSize();

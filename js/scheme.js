@@ -1,231 +1,270 @@
 ﻿/* Торговый центр 'Радуга' Кемерово, этаж 1 (путь '/maps/scheme/1/floor1/') */
 var s1_f1 = {
 	area_1: {
-		href: 'http://sideful.ru',
+		href: '',
 		title: 'Adidas',
 		space: '1',
+		type: 't3',
 		path: 'M 4 106 L 4 208 L 19 208 L 34 208 L 34 211 L 34 214 L 105 214 L 176 214 L 176 116 L 176 18 L 253.5 18 L 331 18 L 331 11 L 331 4 L 167.5 4 L 4 4 L 4 106Z'
 	},
 	area_2: {
 		href: 'http://sideful.ru',
 		title: 'Modis',
 		space: '2',
+		type: 't9',
 		path: 'M 179 160 L 179 299 L 234.5 299 L 290 299 L 290 290.5 L 290 282 L 310.5 282 L 331 282 L 331 151.5 L 331 21 L 255 21 L 179 21 L 179 160Z'
 	},
 	area_3: {
 		href: 'http://sideful.ru',
 		title: 'Calzedonia',
 		space: '3',
+		type: 't9',
 		path: 'M 37 369 L 37 390 L 74.5 390 L 112 390 L 112 369 L 112 348 L 74.5 348 L 37 348 L 37 369Z'
 	},
 	area_7: {
 		href: 'http://sideful.ru',
 		title: 'Galasport',
 		space: '7',
-		path: 'M 48 269.5 L 48 280 L 37.5 280 L 27 280 L 27 290.5 L 27 301 L 69.5 301 L 112 301 L 112 280 L 112 259 L 80 259 L 48 259 L 48 269.5Z'
+		type: 't3',
+		path: 'M 4 280 L 4 301 L 58 301 L 112 301 L 112 280 L 112 259 L 58 259 L 4 259 L 4 280Z'
 	},
 	area_9: {
 		href: 'http://sideful.ru',
 		title: 'Концепт клаб',
 		space: '9',
+		type: 't9',
 		path: 'M 4 347 L 4 390 L 19 390 L 34 390 L 34 367.5 L 34 345 L 73 345 L 112 345 L 112 324.5 L 112 304 L 58 304 L 4 304 L 4 347Z'
 	},
 	area_10: {
 		href: 'http://sideful.ru',
 		title: 'Stayer',
 		space: '10',
+		type: 't3',
 		path: 'M 293 293.5 L 293 302 L 236 302 L 179 302 L 179 323.5 L 179 345 L 227.5 345 L 276 345 L 276 367.5 L 276 390 L 303.5 390 L 331 390 L 331 337.5 L 331 285 L 312 285 L 293 285 L 293 293.5Z'
 	},
 	area_11: {
 		href: 'http://sideful.ru',
 		title: 'Zolla',
 		space: '11',
+		type: 't9',
 		path: 'M 4 458 L 4 523 L 58 523 L 112 523 L 112 458 L 112 393 L 58 393 L 4 393 L 4 458Z'
 	},
 	area_12: {
 		href: 'http://sideful.ru',
 		title: 'Кари',
 		space: '12',
+		type: 't13',
 		path: 'M 179 391.5 L 179 435 L 255 435 L 331 435 L 331 414 L 331 393 L 302 393 L 273 393 L 273 370.5 L 273 348 L 226 348 L 179 348 L 179 391.5Z'
 	},
 	area_13: {
 		href: 'http://sideful.ru',
 		title: 'Календарь подарков',
 		space: '13',
-		path: 'M 179 459.5 L 179 481 L 199.5 481 L 220 481 L 220 459.5 L 220 438 L 199.5 438 L 179 438 L 179 459.5Z'
+		type: 't16',
+		path: 'M 179 459.5 L 179 481 L 199.5 481 L 220 481 L 220 459.5 L 220 438 L 199.5 438 L 179 438 L 179 459.5Z',
+		tip: true
 	},
 	area_14: {
 		href: 'http://sideful.ru',
 		title: 'Пеликан',
 		space: '14',
+		type: 't7',
 		path: 'M 223 459.5 L 223 481 L 249.5 481 L 276 481 L 276 459.5 L 276 438 L 249.5 438 L 223 438 L 223 459.5Z'
 	},
 	area_15: {
 		href: 'http://sideful.ru',
 		title: 'Золото 585',
 		space: '15',
+		type: 't6',
 		path: 'M 4 547.5 L 4 569 L 58 569 L 112 569 L 112 547.5 L 112 526 L 58 526 L 4 526 L 4 547.5Z'
 	},
 	area_17: {
 		href: 'http://sideful.ru',
 		title: 'Метелица',
 		space: '17',
+		type: 't11',
 		path: 'M 4 593 L 4 614 L 58 614 L 112 614 L 112 593 L 112 572 L 58 572 L 4 572 L 4 593Z'
 	},
 	area_18: {
 		href: 'http://sideful.ru',
 		title: 'МТС',
 		space: '18',
+		type: 't1',
 		path: 'M 180 546.5 L 180 569 L 200 569 L 220 569 L 220 546.5 L 220 524 L 200 524 L 180 524 L 180 546.5Z'
 	},
 	area_19: {
 		href: 'http://sideful.ru',
 		title: 'Магнит чудес',
 		space: '19',
+		type: 't16',
 		path: 'M 180 592 L 180 612 L 200 612 L 220 612 L 220 592 L 220 572 L 200 572 L 180 572 L 180 592Z'
 	},
 	area_20: {
 		href: 'http://sideful.ru',
 		title: 'Много мебели',
 		space: '20',
+		type: 't2',
 		path: 'M 223 568 L 223 612 L 248 612 L 273 612 L 273 568 L 273 524 L 248 524 L 223 524 L 223 568Z'
 	},
 	area_21: {
 		href: 'http://sideful.ru',
 		title: 'Белвест',
 		space: '21',
+		type: 't13',
 		path: 'M 276 568 L 276 612 L 302.5 612 L 329 612 L 329 568 L 329 524 L 302.5 524 L 276 524 L 276 568Z'
 	},
 	area_22: {
 		href: 'http://sideful.ru',
 		title: 'Читай город',
 		space: '22',
+		type: 't8',
 		path: 'M 381 568 L 381 612 L 422 612 L 463 612 L 463 568 L 463 524 L 422 524 L 381 524 L 381 568Z'
 	},
 	area_24: {
 		href: 'http://sideful.ru',
 		title: 'Русская охота',
 		space: '24',
+		type: 't16',
 		path: 'M 466 568 L 466 612 L 486.5 612 L 507 612 L 507 568 L 507 524 L 486.5 524 L 466 524 L 466 568Z'
 	},
 	area_25: {
 		href: 'http://sideful.ru',
 		title: 'Сыночки и дочки',
 		space: '25',
+		type: 't10',
 		path: 'M 510 568 L 510 612 L 531 612 L 552 612 L 552 568 L 552 524 L 531 524 L 510 524 L 510 568Z'
 	},
 	area_26: {
 		href: 'http://sideful.ru',
 		title: 'Лэтуаль',
 		space: '26',
+		type: 't5',
 		path: 'M 555 568 L 555 612 L 598.5 612 L 642 612 L 642 573.5 L 642 535 L 620.5 535 L 599 535 L 599 529.5 L 599 524 L 577 524 L 555 524 L 555 568Z'
 	},
 	area_27: {
 		href: 'http://sideful.ru',
 		title: 'Парадис',
 		space: '27',
+		type: 't16',
 		path: 'M 645 553.5 L 645 572 L 667 572 L 689 572 L 689 553.5 L 689 535 L 667 535 L 645 535 L 645 553.5Z'
 	},
 	area_28: {
 		href: 'http://sideful.ru',
 		title: 'Гудвин',
 		space: '28',
+		type: 't16',
 		path: 'M 736 534 L 736 546 L 756 546 L 776 546 L 776 534 L 776 522 L 756 522 L 736 522 L 736 534Z'
 	},
 	area_29: {
 		href: 'http://sideful.ru',
 		title: 'Эдельвейс',
 		space: '29',
+		type: 't15',
 		path: 'M 736 567.5 L 736 586 L 757.5 586 L 779 586 L 779 599 L 779 612 L 800.5 612 L 822 612 L 822 580.5 L 822 549 L 779 549 L 736 549 L 736 567.5Z'
 	},
 	area_30: {
 		href: 'http://sideful.ru',
 		title: 'Профи центр',
 		space: '30',
+		type: 't5',
 		path: 'M 779 534 L 779 546 L 800.5 546 L 822 546 L 822 534 L 822 522 L 800.5 522 L 779 522 L 779 534Z'
 	},
 	area_32: {
 		href: 'http://sideful.ru',
 		title: 'KFC',
 		space: '32',
+		type: 't17',
 		path: 'M 825 567 L 825 612 L 890.5 612 L 956 612 L 956 567 L 956 522 L 890.5 522 L 825 522 L 825 567Z'
 	},
 	area_33: {
 		href: 'http://sideful.ru',
 		title: 'Планета шапок',
 		space: '33',
+		type: 't12',
 		path: 'M 914 503 L 914 519 L 935 519 L 956 519 L 956 503 L 956 487 L 935 487 L 914 487 L 914 503Z'
 	},
 	area_34: {
 		href: 'http://sideful.ru',
 		title: 'Новэкс',
 		space: '34',
+		type: 't2',
 		path: 'M 873 332.5 L 873 336 L 858 336 L 843 336 L 843 368 L 843 400 L 856 400 L 869 400 L 869 442 L 869 484 L 912.5 484 L 956 484 L 956 406.5 L 956 329 L 914.5 329 L 873 329 L 873 332.5Z'
 	},
 	area_35: {
 		href: 'http://sideful.ru',
 		title: '1001 сумка',
 		space: '35',
+		type: 't7',
 		path: 'M 823 443.5 L 823 484 L 844.5 484 L 866 484 L 866 443.5 L 866 403 L 844.5 403 L 823 403 L 823 443.5Z'
 	},
 	area_36: {
 		href: 'http://sideful.ru',
 		title: 'Мария-ра',
 		space: '36',
+		type: 't4',
 		path: 'M 701 240.5 L 701 247 L 696.5 247 L 692 247 L 692 360 L 692 473 L 756 473 L 820 473 L 820 436.5 L 820 400 L 830 400 L 840 400 L 840 342.5 L 840 285 L 831 285 L 822 285 L 822 264 L 822 243 L 767 243 L 712 243 L 712 238.5 L 712 234 L 706.5 234 L 701 234 L 701 240.5Z'
 	},
 	area_37: {
 		href: 'http://sideful.ru',
 		title: 'Евросеть',
 		space: '37',
+		type: 't1',
 		path: 'M 668 436.5 L 668 473 L 678.5 473 L 689 473 L 689 436.5 L 689 400 L 678.5 400 L 668 400 L 668 436.5Z'
 	},
 	area_38: {
 		href: 'http://sideful.ru',
 		title: 'Promo оптика',
 		space: '38',
+		type: 't12',
 		path: 'M 644 436.5 L 644 473 L 654.5 473 L 665 473 L 665 436.5 L 665 400 L 654.5 400 L 644 400 L 644 436.5Z'
 	},
 	area_39: {
 		href: 'http://sideful.ru',
 		title: 'Глория Джинс',
 		space: '39',
+		type: '',
 		path: 'M 492 295 L 492 305 L 479 305 L 466 305 L 466 316 L 466 327 L 510.5 327 L 555 327 L 555 404 L 555 481 L 575.5 481 L 596 481 L 596 477 L 596 473 L 618.5 473 L 641 473 L 641 435 L 641 397 L 665 397 L 689 397 L 689 341 L 689 285 L 590.5 285 L 492 285 L 492 295Z'
 	},
 	area_40: {
 		href: 'http://sideful.ru',
 		title: 'ДНС',
 		space: '40',
+		type: 't1',
 		path: 'M 510 405.5 L 510 481 L 531 481 L 552 481 L 552 405.5 L 552 330 L 531 330 L 510 330 L 510 405.5Z'
 	},
 	area_41: {
 		href: 'http://sideful.ru',
 		title: 'Трэйс',
 		space: '41',
+		type: 't13',
 		path: 'M 466 405.5 L 466 481 L 486.5 481 L 507 481 L 507 405.5 L 507 330 L 486.5 330 L 466 330 L 466 405.5Z'
 	},
 	area_42: {
 		href: 'http://sideful.ru',
 		title: 'Вестфалика',
 		space: '42',
+		type: 't13',
 		path: 'M 440 437 L 440 481 L 451.5 481 L 463 481 L 463 437 L 463 393 L 451.5 393 L 440 393 L 440 437Z'
 	},
 	area_43: {
 		href: 'http://sideful.ru',
 		title: 'Rosa',
 		space: '43',
+		type: 't13',
 		path: 'M 369 437 L 369 481 L 403 481 L 437 481 L 437 437 L 437 393 L 403 393 L 369 393 L 369 437Z'
 	},
 	area_44: {
 		href: 'http://sideful.ru',
 		title: 'Ортопедическая обувь',
 		space: '44',
+		type: 't13',
 		path: 'M 334 437 L 334 481 L 350 481 L 366 481 L 366 437 L 366 393 L 350 393 L 334 393 L 334 437Z'
 	},
 	area_45: {
 		href: 'http://sideful.ru',
 		title: 'Евростиль',
 		space: '45',
+		type: 't13',
 		path: 'M 279 459.5 L 279 481 L 305 481 L 331 481 L 331 459.5 L 331 438 L 305 438 L 279 438 L 279 459.5Z'
 	},
 	/*
@@ -233,24 +272,28 @@ var s1_f1 = {
 		href: '',
 		title: '',
 		space: '4',
-		path: 'M 4 256 L 4 301 L 14 301 L 24 301 L 24 289 L 24 277 L 34.5 277 L 45 277 L 45 266.5 L 45 256 L 65 256 L 85 256 L 85 243.5 L 85 231 L 58 231 L 31 231 L 31 221 L 31 211 L 17.5 211 L 4 211 L 4 256Z'
+		type: '',
+		path: 'M 34 243.5 L 34 256 L 59.5 256 L 85 256 L 85 243.5 L 85 231 L 59.5 231 L 34 231 L 34 243.5Z'
 	},
 	area_6: {
 		href: '',
 		title: '',
 		space: '6',
+		type: '',
 		path: 'M 88 243.5 L 88 256 L 100 256 L 112 256 L 112 243.5 L 112 231 L 100 231 L 88 231 L 88 243.5Z'
 	},
 	area_19: {
 		href: '',
 		title: '',
 		space: '19',
+		type: '',
 		path: 'M 180 592 L 180 612 L 200 612 L 220 612 L 220 592 L 220 572 L 200 572 L 180 572 L 180 592Z'
 	},
 	area_23: {
 		href: '',
 		title: '',
 		space: '23',
+		type: '',
 		path: 'M 332 568 L 332 612 L 355 612 L 378 612 L 378 568 L 378 524 L 355 524 L 332 524 L 332 568Z'
 	},
 	*/
@@ -262,132 +305,147 @@ var s1_f2 = {
 		href: 'http://sideful.ru',
 		title: 'Детский мир',
 		space: '1',
+		type: 't10',
 		path: 'M 4 87 L 4 170 L 90 170 L 176 170 L 176 146.5 L 176 123 L 253.5 123 L 331 123 L 331 63.5 L 331 4 L 167.5 4 L 4 4 L 4 87Z'
 	},
 	area_3: {
 		href: 'http://sideful.ru',
 		title: 'Крафт',
 		space: '3',
+		type: 't3',
 		path: 'M 179 168.5 L 179 211 L 255 211 L 331 211 L 331 168.5 L 331 126 L 255 126 L 179 126 L 179 168.5Z'
 	},
 	area_5: {
 		href: 'http://sideful.ru',
 		title: 'Askona',
 		space: '5',
+		type: 't2',
 		path: 'M 4 193.5 L 4 214 L 58 214 L 112 214 L 112 193.5 L 112 173 L 58 173 L 4 173 L 4 193.5Z'
 	},
 	area_7: {
 		href: 'http://sideful.ru',
 		title: 'Cocoon',
 		space: '7',
+		type: 't9',
 		path: 'M 4 238 L 4 259 L 58 259 L 112 259 L 112 238 L 112 217 L 58 217 L 4 217 L 4 238Z'
 	},
 	area_8: {
 		href: 'http://sideful.ru',
 		title: 'Мир одежды',
 		space: '8',
+		type: 't9',
 		path: 'M 4 283 L 4 304 L 58 304 L 112 304 L 112 283 L 112 262 L 58 262 L 4 262 L 4 283Z'
 	},
 	area_9: {
 		href: 'http://sideful.ru',
 		title: '4 sezona',
 		space: '9',
+		type: 't9',
 		path: 'M 4 328 L 4 349 L 58 349 L 112 349 L 112 328 L 112 307 L 58 307 L 4 307 L 4 328Z'
 	},
 	area_10: {
 		href: 'http://sideful.ru',
 		title: 'Топтыжка',
 		space: '10',
+		type: 't10',
 		path: 'M 4 373 L 4 394 L 46.5 394 C 88.8 394 89 394 90.8 391.9 C 91.7 390.7 96.9 385.3 102.3 379.9 L 112 370.1 L 112 361 L 112 352 L 58 352 L 4 352 L 4 373Z'
 	},
 	area_11: {
 		href: 'http://sideful.ru',
 		title: 'Озорники',
 		space: '11',
+		type: 't10',
 		path: 'M 4 418 L 4 439 L 45.5 439 L 87 439 L 87 418 L 87 397 L 45.5 397 L 4 397 L 4 418Z'
 	},
 	area_12: {
 		href: 'http://sideful.ru',
 		title: 'Офисные мелочи',
 		space: '12',
+		type: 't8',
 		path: 'M 4 471 L 4 500 L 30 500 L 56 500 L 56 492 L 56 484 L 71.5 484 L 87 484 L 87 463 L 87 442 L 45.5 442 L 4 442 L 4 471Z'
 	},
 	area_14: {
 		href: 'http://sideful.ru',
 		title: 'Умные дети',
 		space: '14',
+		type: 't10',
 		path: 'M 59 508 L 59 529 L 73 529 L 87 529 L 87 508 L 87 487 L 73 487 L 59 487 L 59 508Z'
 	},
 	area_16: {
 		href: 'http://sideful.ru',
 		title: 'Веселая расческа',
 		space: '16',
+		type: 't19',
 		path: 'M 4 581.5 L 4 614 L 32.5 614 L 61 614 L 61 581.5 L 61 549 L 32.5 549 L 4 549 L 4 581.5Z'
 	},
 	area_17: {
 		href: 'http://sideful.ru',
 		title: 'Фудкорт',
 		space: '17',
+		type: 't17',
 		path: 'M 64 561.5 L 64 574 L 141.5 574 L 219 574 L 219 561.5 L 219 549 L 141.5 549 L 64 549 L 64 561.5Z'
 	},
 	area_18: {
 		href: 'http://sideful.ru',
 		title: 'Суши маке',
 		space: '18',
+		type: 't17',
 		path: 'M 64 595.5 L 64 614 L 83 614 L 102 614 L 102 595.5 L 102 577 L 83 577 L 64 577 L 64 595.5Z'
 	},
 	area_19: {
 		href: 'http://sideful.ru',
 		title: 'Сибирские блины',
 		space: '19',
+		type: 't17',
 		path: 'M 105 595.5 L 105 614 L 121 614 L 137 614 L 137 595.5 L 137 577 L 121 577 L 105 577 L 105 595.5Z'
 	},
 	area_20: {
 		href: 'http://sideful.ru',
 		title: 'Варенька',
 		space: '20',
+		type: 't17',
 		path: 'M 140 595.5 L 140 614 L 161.5 614 L 183 614 L 183 595.5 L 183 577 L 161.5 577 L 140 577 L 140 595.5Z'
 	},
 	area_21: {
 		href: 'http://sideful.ru',
 		title: 'Subway',
 		space: '21',
+		type: 't17',
 		path: 'M 186 595.5 L 186 614 L 202.5 614 L 219 614 L 219 595.5 L 219 577 L 202.5 577 L 186 577 L 186 595.5Z'
 	},
 	area_22: {
 		href: 'http://sideful.ru',
 		title: 'Кинотеатр',
 		space: '22',
-		path: 'M 222 581.5 L 222 614 L 262 614 L 302 614 L 302 595.5 L 302 577 L 293 577 L 284 577 L 284 563 L 284 549 L 253 549 L 222 549 L 222 581.5Z'
-	},
-	area_23: {
-		href: 'http://sideful.ru',
-		title: 'Кино 3D',
-		space: '23',
-		path: 'M 287 561.5 L 287 574 L 300 574 L 313 574 L 313 561.5 L 313 549 L 300 549 L 287 549 L 287 561.5Z'
+		type: 't18',
+		path: 'M 222 581.5 L 222 614 L 262 614 L 302 614 L 302 581.5 L 302 549 L 262 549 L 222 549 L 222 581.5Z'
 	},
 	area_27: {
 		href: 'http://sideful.ru',
 		title: 'Орматек',
 		space: '27',
+		type: 't2',
 		path: 'M 466 581.5 L 466 614 L 485.5 614 L 505 614 L 505 581.5 L 505 549 L 485.5 549 L 466 549 L 466 581.5Z'
 	},
 	area_28: {
 		href: 'http://sideful.ru',
 		title: 'Briolle',
 		space: '28',
+		type: 't9',
 		path: 'M 508 581.5 L 508 614 L 530 614 L 552 614 L 552 581.5 L 552 549 L 530 549 L 508 549 L 508 581.5Z'
 	},
 	area_29: {
 		href: 'http://sideful.ru',
 		title: 'Моя шапка',
 		space: '29',
+		type: 't12',
 		path: 'M 555 588 L 555 614 L 575.5 614 L 596 614 L 596 588 L 596 562 L 575.5 562 L 555 562 L 555 588Z'
 	},
 	area_30: {
 		href: 'http://sideful.ru',
 		title: '4 сезона',
 		space: '30',
+		type: 't9',
 		path: 'M 599 588 L 599 614 L 620.5 614 L 642 614 L 642 593 L 642 572 L 650.5 572 L 659 572 L 659 567 L 659 562 L 629 562 L 599 562 L 599 588Z'
 	},
 	area_31: {
@@ -400,84 +458,98 @@ var s1_f2 = {
 		href: 'http://sideful.ru',
 		title: '5 элемент',
 		space: '32',
+		type: 't1',
 		path: 'M 736 348.5 L 736 454 L 725 454 L 714 454 L 714 467 L 714 480 L 835 480 L 956 480 L 956 404 L 956 328 L 913 328 L 870 328 L 870 287.5 L 870 247 L 864 247 C 858.7 247 858 246.8 858 245 C 858 243 857.3 243 797 243 L 736 243 L 736 348.5Z'
 	},
 	area_33: {
 		href: 'http://sideful.ru',
 		title: 'Дятьково',
 		space: '33',
+		type: 't2',
 		path: 'M 701 245 C 701 246.7 700.3 247 696.5 247 L 692 247 L 692 349 L 692 451 L 712.5 451 L 733 451 L 733 347 L 733 243 L 717 243 C 701.7 243 701 243.1 701 245Z'
 	},
 	area_34: {
 		href: 'http://sideful.ru',
 		title: 'Ostin',
 		space: '34',
+		type: 't9',
 		path: 'M 577 258 L 577 269 L 599.5 269 L 622 269 L 622 334.5 L 622 400 L 633 400 L 644 400 L 644 425.5 L 644 451 L 666.5 451 L 689 451 L 689 349 L 689 247 L 633 247 L 577 247 L 577 258Z'
 	},
 	area_35: {
 		href: 'http://sideful.ru',
 		title: 'Аляска',
 		space: '35',
+		type: 't11',
 		path: 'M 554 349 L 554 451 L 575 451 L 596 451 L 596 425.5 L 596 400 L 607.5 400 L 619 400 L 619 336 L 619 272 L 596.5 272 L 574 272 L 574 259.5 L 574 247 L 564 247 L 554 247 L 554 349Z'
 	},
 	area_36: {
 		href: 'http://sideful.ru',
 		title: 'Яшма',
 		space: '36',
+		type: 't6',
 		path: 'M 599 427 L 599 451 L 620 451 L 641 451 L 641 427 L 641 403 L 620 403 L 599 403 L 599 427Z'
 	},
 	area_37: {
 		href: 'http://sideful.ru',
 		title: 'Центробувь',
 		space: '37',
+		type: 't13',
 		path: 'M 466 323.5 L 466 400 L 488.5 400 L 511 400 L 511 425.5 L 511 451 L 531 451 L 551 451 L 551 349 L 551 247 L 508.5 247 L 466 247 L 466 323.5Z'
 	},
 	area_38: {
 		href: 'http://sideful.ru',
 		title: 'Атлантик',
 		space: '38',
+		type: 't16',
 		path: 'M 466 426.5 L 466 450 L 487 450 L 508 450 L 508 426.5 L 508 403 L 487 403 L 466 403 L 466 426.5Z'
 	},
 	area_41: {
 		href: 'http://sideful.ru',
 		title: 'Постелька',
 		space: '41',
+		type: 't2',
 		path: 'M 334 349 L 334 451 L 364.5 451 L 395 451 L 395 349 L 395 247 L 364.5 247 L 334 247 L 334 349Z'
 	},
 	area_42: {
 		href: 'http://sideful.ru',
 		title: 'Deseo',
 		space: '42',
+		type: 't14',
 		path: 'M 179 237 L 179 260 L 255 260 L 331 260 L 331 237 L 331 214 L 255 214 L 179 214 L 179 237Z'
 	},
 	area_43: {
 		href: 'http://sideful.ru',
 		title: 'Incity',
 		space: '43',
+		type: 't9',
 		path: 'M 179 316.6 L 179 370.2 L 190.9 382.1 L 202.8 394 L 266.9 394 L 331 394 L 331 328.5 L 331 263 L 255 263 L 179 263 L 179 316.6Z'
 	},
 	area_44: {
 		href: 'http://sideful.ru',
 		title: 'Конвер',
 		space: '44',
+		type: 't13',
 		path: 'M 205 418.6 L 205 440.2 L 210.5 445.6 L 215.9 451 L 228.5 451 L 241 451 L 241 424 L 241 397 L 223 397 L 205 397 L 205 418.6Z'
 	},
 	area_45: {
 		href: 'http://sideful.ru',
 		title: 'Baby',
 		space: '45',
+		type: 't10',
 		path: 'M 244 424 L 244 451 L 263.5 451 L 283 451 L 283 424 L 283 397 L 263.5 397 L 244 397 L 244 424Z'
 	},
 	area_46: {
 		href: 'http://sideful.ru',
 		title: 'Dakota jeans',
 		space: '46',
+		type: 't9',
 		path: 'M 286 424 L 286 451 L 308.5 451 L 331 451 L 331 424 L 331 397 L 308.5 397 L 286 397 L 286 424Z'
 	},
 	area_47: {
 		href: 'http://sideful.ru',
 		title: 'Детская игровая',
 		space: '47',
+		type: 't19',
 		path: 'M 206.3 478.5 L 201 483.8 L 201 492.5 L 201 501.2 L 206.5 506.6 L 212 512 L 263.5 512 L 315 512 L 320.5 506.6 L 326 501.3 L 326 492.6 L 326 484 L 320.6 478.5 L 315.3 473 L 263.4 473 L 211.5 473.1 L 206.3 478.5Z'
 	},
 	area_48: {
@@ -2572,35 +2644,121 @@ if ( $('.scheme').length > 0 ) {
 			'width': w+'px',
 			'height': h+'px'
 		});
-		var r = Raphael($(this).find('.svg').attr('id'), w, h),
+		var r = Raphael(current.find('.touch .svg').attr('id'), w, h),
 		attributes = {
 			fill: '#ffffff',
 			opacity: 0,
 			'stroke-width': 0
 		},
 		arr = new Array();
+		
+		var r_h = Raphael(current.find('.highlight .svg').attr('id'), w, h),
+		attributes_h = {
+			fill: '#00A0E3',
+			opacity: 0,
+			'stroke-width': 0
+		},
+		arr_h = new Array();
+		
+		var r_s = Raphael(current.find('.selected .svg').attr('id'), w, h),
+		attributes_s = {
+			fill: '#a9bc53',
+			opacity: 1,
+			'stroke-width': 0
+		},
+		arr_s = new Array();
+
 		var paths = eval('s'+current.attr('data-building')+'_f'+current.attr('data-floor'));
+		
 		for (var shop in paths) {
+		
 			var obj = r.path(paths[shop].path);
 			obj.attr(attributes);
 			arr[obj.id] = shop;
+		
+			var obj_h = r_h.path(paths[shop].path);
+			obj_h.attr(attributes_h);
+		
+			var obj_s = r_s.path(paths[shop].path);
+			obj_s.attr(attributes_s);
+			
 			obj.click(
 				function() {
-					//alert(paths[arr[this.id]].title);
-					window.location.href = paths[arr[this.id]].href;
+					if ( paths[arr[this.id]].href ) {
+						window.location.href = paths[arr[this.id]].href;
+					}
 				}
 			);
 			obj.hover(function() {
-				this.stop(true,true).animate({
+				current.find('.highlight svg path[d="'+this.attr('path')+'"]').stop(true,true).animate({
 					opacity: '0.25'
 				}, 250);
-			}, function(){
-				this.stop(true,true).animate({
+				if ( paths[arr[this.id]].href ) {
+					current.find('.touch svg path').css({
+						'cursor': 'pointer'
+					});
+				}
+				if ( paths[arr[this.id]].tip ) {
+					var point = this.getBBox(0);
+					current.append('<p class="bubble">'+paths[arr[this.id]].title+'</p>');
+					current.find('.bubble').css({
+						'left': point.x+'px',
+						'top': point.y-64+'px'
+					});
+				}
+			}, function() {
+				current.find('.highlight svg path').stop(true,true).animate({
 					opacity: '0'
 				}, 250);
+				current.find('.touch svg path').css({
+					'cursor': 'default'
+				});
+				current.find('.bubble').remove();
 			});
+
 		}
 	});
+	
+	var hightlightColors = {
+		t1: '#f7e900',
+		t2: '#f5eb52',
+		t3: '#fe7613',
+		t4: '#00d698',
+		t5: '#0067b3',
+		t6: '#00691c',
+		t7: '#009f2d',
+		t8: '#3b3b3b',
+		t9: '#00b9b6',
+		t10: '#c2a7e1',
+		t11: '#ff5c78',
+		t12: '#7de0e3',
+		t13: '#6d5e8d',
+		t14: '#f1acb9',
+		t15: '#f42421',
+		t16: '#612d14',
+		t17: '#ffbb00',
+		t18: '#9d3296',
+		t19: '#601b5b'
+	}
+
+	$('.scheme .legend ul li span').bind('click', function(event) {
+		var type = $(this).attr('class');
+		var current = $(this).parents('.scheme').find('.plan').children('div.active');
+		var paths = eval('s'+current.attr('data-building')+'_f'+current.attr('data-floor'));
+		current.find('.selected svg path').attr('fill', '#a9bc53');
+		for (var key in paths) {
+			var val = paths[key];
+			if ( val['type'] == type ) {
+				var path = val['path'].replace(/(\d)\s+(?=\d)/g, '$1,').replace(/\s/g, '');
+				for (var key in hightlightColors) {
+					current.find('.selected svg path[d="'+path+'"]').attr('fill', hightlightColors[type]);
+				}
+				
+			}
+		}
+		event.preventDefault();
+	});
+	
 	$('.scheme .plan ul.nav li a').bind('click', function(event) {
 		$(this).parents('.plan').children('div[data-floor="'+$(this).attr('href')+'"]').show().addClass('active').siblings('div[data-floor]').removeClass('active').hide();
 		$(this).parent().addClass('active').siblings().removeClass();
@@ -2613,15 +2771,4 @@ if ( $('.scheme').length > 0 ) {
 		http.send();
 		return http.status != 404;
 	}
-	$('.scheme .legend ul li span').bind('click', function(event) {
-		var current = $(this).parents('.scheme').find('.plan').children('div.active');
-		var type = $(this).attr('class');
-		$.get('./maps/scheme/'+current.attr('data-building')+'/floor'+current.attr('data-floor')+'/hover/'+type+'.png').done(function() {
-			current.find('.hover').remove();
-			current.find('.layers').append('<img src="./maps/scheme/'+current.attr('data-building')+'/floor'+current.attr('data-floor')+'/hover/'+type+'.png" class="hover" alt="">');
-		}).fail(function() { 
-			current.find('.hover').remove();
-		});
-		event.preventDefault();
-	});
 }

@@ -180,7 +180,13 @@ button::-moz-focus-inner {
 	width:100%;
 }
 .header.fixed img.logo {
-	top:26px;
+	top:16px;
+}
+.header .town {
+	position:absolute;
+	left:50%;
+	top:62px;
+	margin:0 0 0 -447px;
 }
 .section .header {
 	visibility:hidden;
@@ -1274,29 +1280,29 @@ button::-moz-focus-inner {
 	width:1000px;
 	height:430px;
 }
-.gallery .slider .container > div > div {
+.gallery .slider .container .inner {
 	clear:both;
 	overflow:hidden;
 	height:410px;
 	width:963px;
 	padding:20px 18px 0 19px;
 }
-.gallery .slider .container > div > div > div {
+.gallery .slider .container .item {
 	position:relative;
 	float:left;
 	width:320px;
 	height:480px;
 	margin:0 1px 0 0;
 }
-.gallery .slider .container > div > div > div:hover {
+.gallery .slider .container .item:hover {
 	z-index:1;
 }
-.gallery .slider .container > div > div > div > div {
+.gallery .slider .container .item > div {
 	width:320px;
 	height:286px;
 	padding:1px 0 0;
 }
-.gallery .slider .container > div > div > div > div .flip {
+.gallery .slider .container .item > div .flip {
     position:relative;
     margin:20px 22px 0;
     width:276px;
@@ -1310,7 +1316,7 @@ button::-moz-focus-inner {
     -o-perspective:1000px;
     perspective:1000px;
 }
-.gallery .slider .container > div > div > div > div .flip .front, .gallery .slider .container > div > div > div > div .flip .back {
+.gallery .slider .container .item > div .flip .front, .gallery .slider .container .item > div .flip .back {
     position:absolute;
     width:100%;
     height:100%;
@@ -1320,33 +1326,33 @@ button::-moz-focus-inner {
     -o-transition:all 0.5s ease-in-out;
     transition:all 0.5s ease-in-out;
 }
-.gallery .slider .container > div > div > div > div .flip > div img {
+.gallery .slider .container .item > div .flip > div img {
 	position:absolute;
 	left:0;
 	top:0;
 	width:100%;
 	height:100%;
 }
-.gallery .slider .container > div > div > div > div .flip .front {
+.gallery .slider .container .item > div .flip .front {
 	z-index:1;
 	-webkit-transform:rotateY(0deg) translateZ(138px);
 	-moz-transform:rotateY(0deg) translateZ(138px);
 	-o-transform:rotateY(0deg) translateZ(138px);
 	transform:rotateY(0deg) translateZ(138px);
 }
-.gallery .slider .container > div > div > div > div .flip .back {
+.gallery .slider .container .item > div .flip .back {
 	-webkit-transform:rotateY(90deg) translateZ(138px);
 	-moz-transform:rotateY(90deg) translateZ(138px);
 	-o-transform:rotateY(90deg) translateZ(138px);
 	transform:rotateY(90deg) translateZ(138px);
 }
-.gallery .slider .container > div > div > div:hover > div .flip .front {
+.gallery .slider .container .item > div:hover .flip .front {
 	-webkit-transform:rotateY(-90deg) translateZ(138px);
 	-moz-transform:rotateY(-90deg) translateZ(138px);
 	-o-transform:rotateY(-90deg) translateZ(138px);
 	transform:rotateY(-90deg) translateZ(138px);
 }
-.gallery .slider .container > div > div > div:hover > div .flip .back {
+.gallery .slider .container .item > div:hover .flip .back {
 	z-index:1;
 	-webkit-transform:rotateY(0deg) translateZ(138px);
 	-moz-transform:rotateY(0deg) translateZ(138px);
@@ -2255,7 +2261,9 @@ p.bubble {
 	line-height:17px;
 	padding:11px 25px 14px 46px;
 	background:#ffffff url('../img/space_icon.png') no-repeat 11px 11px;
-	box-shadow:0 0 15px rgba(0,0,0,0.25);
+	-webkit-box-shadow:0 0 15px rgba(0,0,0,0.2);
+	-moz-box-shadow:0 0 15px rgba(0,0,0,0.2);
+	box-shadow:0 0 15px rgba(0,0,0,0.2);
 }
 p.bubble:before {
 	content:'';
@@ -2538,6 +2546,8 @@ p.bubble:before {
 	margin:0 16px 0 0;
 }
 .feedback .tab div textarea {
+	overflow:hidden;
+	min-height:66px;
 	resize:vertical;
 	margin:0 0 -3px;
 }
@@ -3019,13 +3029,31 @@ p.bubble:before {
 	position:relative;
 	z-index:10;
 }
-.scheme .plan > div .svg path {
+/*.scheme .plan > div .svg path {
 	cursor:pointer;
-}
+}*/
 .scheme .plan > div .layers {
 	position:absolute;
 	left:0;
 	top:0;
+}
+.scheme .plan > div .layers .selected {
+	position:absolute;
+	left:0;
+	top:0;
+	z-index:1;
+}
+.scheme .plan > div .layers .highlight {
+	position:absolute;
+	left:0;
+	top:0;
+	z-index:3;
+}
+.scheme .plan > div .layers .selected {
+	position:absolute;
+	left:0;
+	top:0;
+	z-index:2;
 }
 .scheme .plan > div .layers .bg {
 	position:absolute;
@@ -3037,31 +3065,37 @@ p.bubble:before {
 	position:absolute;
 	left:0;
 	top:0;
-	z-index:2;
+	z-index:4;
 }
 .scheme .plan > div .layers .lines {
 	position:absolute;
 	left:0;
 	top:0;
-	z-index:3;
+	z-index:5;
 }
 .scheme .plan > div .layers .titles {
 	position:absolute;
 	left:0;
 	top:0;
-	z-index:4;
+	z-index:6;
 }
 .scheme .plan > div .layers .icons {
 	position:absolute;
 	left:0;
 	top:0;
-	z-index:5;
+	z-index:7;
 }
 .scheme .plan > div .layers .new {
 	position:absolute;
 	left:0;
 	top:0;
-	z-index:6;
+	z-index:8;
+}
+.scheme .plan > div .layers .touch {
+	position:absolute;
+	left:0;
+	top:0;
+	z-index:9;
 }
 .scheme .plan .nav {
 	text-align:center;

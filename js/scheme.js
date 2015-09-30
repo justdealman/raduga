@@ -586,6 +586,7 @@ var s2_f1 = {
 		href: 'http://sideful.ru',
 		title: 'Спортмастер',
 		space: '1',
+		type: 't1',
 		path: 'M 30 135.5 L 30 245 L 57 245 L 84 245 L 84 219.5 L 84 194 L 93.5 194 L 103 194 L 103 166.5 L 103 139 L 133 139 L 163 139 L 163 82.5 L 163 26 L 96.5 26 L 30 26 L 30 135.5Z'
 	},
 	area_2: {
@@ -2858,6 +2859,7 @@ if ( $('.scheme').length > 0 ) {
 	});
 	
 	var hightlightColors = {
+		t0: '#000000',
 		t1: '#f7e900',
 		t2: '#f5eb52',
 		t3: '#fe7613',
@@ -2907,22 +2909,22 @@ if ( $('.scheme').length > 0 ) {
 		var hash = e;
 		var current = $('.scheme .plan').children('div.active');
 		var paths = eval('s'+current.attr('data-building')+'_f'+current.attr('data-floor'));
-		for (var key in paths) {
-			var val = paths[e];
-			if ( val['path'] ) {
-				var path = val['path'].replace(/(\d)\s+(?=\d)/g, '$1,').replace(/\s/g, '');
-				var type = val['type'];
-				for (var key in hightlightColors) {
-					current.find('.selected svg path[d="'+path+'"]').attr('fill', hightlightColors[type]);
-				}
-			}
-			else {
-				current.find('.selected svg path').attr('fill', '#000000');
-			}
+		var val = paths[e];
+		var path = val['path'].replace(/(\d)\s+(?=\d)/g, '$1,').replace(/\s/g, '');
+		var type = val['type'];
+		if ( type ) {
+			current.find('.selected svg path[d="'+path+'"]').attr('fill', hightlightColors[type]);
+		}
+		else {
+			current.find('.selected svg path[d="'+path+'"]').attr('fill', '#000000');
 		}
 	}
-	
-	$('.scheme .plan ul.nav li:nth-child(1) a').trigger('click');
+	if ( $('.scheme .plan > div').size() > 1 ) {
+		$('.scheme .plan ul.nav li:nth-child(1) a').trigger('click');
+	}
+	else {
+		$('.scheme .plan > div').addClass('active');
+	}
 	if ( window.location.hash.length > 0 ) {
 		selectDefault(window.location.hash.substr(1));
 	}

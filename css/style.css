@@ -1614,11 +1614,6 @@ button::-moz-focus-inner {
 	width:240px;
 	margin-right:0;
 }
-.catalog li a {
-	display:block;
-	width:239px;
-	height:239px;
-}
 .catalog li:nth-child(4n) a {
 	width:240px;
 }
@@ -3292,4 +3287,13 @@ path:hover{
 	color:#ffffff;
 	background:#080626;
 	border:1px solid #080626;
+}
+.catalog.innersect li h5 {
+	transition:all 0.2s ease-in-out;
+	-webkit-transition:all 0.2s ease-in-out;
+	-moz-transition:all 0.2s ease-in-out;
+	-o-transition:all 0.2s ease-in-out;
+}
+.catalog.innersect li:hover h5 {
+	color:#ffffff;
 }

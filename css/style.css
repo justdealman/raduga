@@ -262,8 +262,8 @@ button::-moz-focus-inner {
 .header img.logo {
 	position:absolute;
 	left:50%;
-	top:16px;
-	margin-left:-447px;
+	top:0;
+	margin-left:-480px;
 }
 .header ul {
 	position:absolute;
@@ -361,7 +361,7 @@ button::-moz-focus-inner {
 		margin:0 378px 0 0;
 	}
 	.header img.logo {
-		margin-left:-324px;
+		margin-left:-360px;
 	}
 	.header div.logo {
 		margin-left:-360px;

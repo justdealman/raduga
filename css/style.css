@@ -20,6 +20,15 @@
 }
 @font-face {
     font-family:'Segoe UI';
+    src:url('../fonts/segoeuisb.eot');
+    src:url('../fonts/segoeuisb.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/segoeuisb.woff') format('woff'),
+        url('../fonts/segoeuisb.ttf') format('truetype');
+    font-weight:600;
+    font-style:normal;
+}
+@font-face {
+    font-family:'Segoe UI';
     src:url('../fonts/segoeuib.eot');
     src:url('../fonts/segoeuib.eot?#iefix') format('embedded-opentype'),
         url('../fonts/segoeuib.woff') format('woff'),
@@ -347,6 +356,35 @@ button::-moz-focus-inner {
 .section:first-child .header button {
 	top:31px;
 }
+@media all and (max-width: 1400px) {
+	.header h5 {
+		margin:0 362px 0 0;
+	}
+	.header h6 {
+		margin:0 378px 0 0;
+	}
+	.header img.logo {
+		margin-left:-324px;
+	}
+	.header div.logo {
+		margin-left:-360px;
+	}
+	.header .town {
+		margin-left:-323px;
+	}
+	.header ul {
+		margin:0 0 0 -200px;
+	}
+	.header ul li a {
+		padding:36px 16px 36px 15px;
+	}
+	.fixed .header ul li a {
+		padding:36px 19px 36px 18px;
+	}
+	.header button {
+		margin-right:-540px;
+	}
+}
 .introduction {
 	overflow:hidden;
 	position:absolute;
@@ -395,105 +433,17 @@ button::-moz-focus-inner {
 	overflow:hidden;
 	min-height:509px;
 }
-.introduction .slide1 {
-	background:#f7f6f4;
-}
-.introduction .slide1 > img {
-	position:absolute;
-	right:50%;
-	bottom:0;
-	width:auto;
-	min-height:509px;
-	margin-right:-480px;
-	-webkit-transform:translateX(200px);
-	-moz-transform:translateX(200px);
-	-o-transform:translateX(200px);
-	-ms-transform:translateX(200px);
-	transform:translateX(200px);
-	opacity:0;
-	transition:all 0.5s ease-out;
-	-webkit-transition:all 0.5s ease-out;
-	-moz-transition:all 0.5s ease-out;
-	-o-transition:all 0.5s ease-out;
-}
-.introduction .slide1 .info {
-	position:absolute;
-	left:50%;
-	top:50%;
-	z-index:5;
-	width:352px;
-	text-align:center;
-	padding:85px 18px 93px;
-	margin:-206px 0 0 -606px;
-	border:1px solid #000000;
-}
-.introduction .slide1 .info h5 {
-	font-size:22px;
-	line-height:26px;
-	font-weight:300;
-	padding:0;
-	margin:0;
-}
-.introduction .slide1 .info h5 span {
-	font-size:24px;
-	font-weight:normal;
-}
-.introduction .slide1 .info h5 strong {
-	display:block;
-	font-size:44px;
-	line-height:48px;
-	font-weight:normal;
-	text-transform:uppercase;
-	margin:0 0 7px;
-}
-.introduction .slide1 .info > div {
-	position:relative;
-	padding:21px 0 0;
-	margin:83px 0 0;
-}
-.introduction .slide1 .info > div:before {
-	content:'';
-	position:absolute;
-	left:50%;
-	top:0;
-	width:47px;
-	height:2px;
-	margin-left:-24px;
-	background:#000000;
-}
-.introduction .slide1 .info > div p {
-	font-size:14px;
-	line-height:18px;
-	margin:0;
-}
-.introduction .slide1.complete > img {
-	-webkit-transform:translateX(0);
-	-moz-transform:translateX(0);
-	-o-transform:translateX(0);
-	-ms-transform:translateX(0);
-	transform:translateX(0);
-	opacity:1;
-}
-.introduction .slide1.out > img {
-	-webkit-transform:translateX(200px);
-	-moz-transform:translateX(200px);
-	-o-transform:translateX(200px);
-	-ms-transform:translateX(200px);
-	transform:translateX(200px);
-	opacity:1;
-}
-.introduction .slide2 .bg {
+.introduction .core .bg {
 	position:absolute;
 	left:0;
 	top:0;
 	width:100%;
 	height:100%;
 	min-height:509px;
-	background:url('../pic/slide2.jpg') no-repeat center center;
-	-webkit-background-size:cover;
-	-moz-background-size:cover;
-	-o-background-size:cover;
-	background-size:cover;
+	-webkit-background-size:cover !important;
+	-moz-background-size:cover !important;
+	-o-background-size:cover !important;
+	background-size:cover !important;
 	-webkit-transform:scale(1.5);
 	-moz-transform:scale(1.5);
 	-o-transform:scale(1.5);
@@ -504,45 +454,109 @@ button::-moz-focus-inner {
 	-moz-transition:all 0.5s ease-out;
 	-o-transition:all 0.5s ease-out;
 }
-.introduction .slide2.complete .bg {
+.introduction .core.complete .bg {
 	-webkit-transform:scale(1);
 	-moz-transform:scale(1);
 	-o-transform:scale(1);
 	-ms-transform:scale(1);
 	transform:scale(1);
 }
-.introduction .slide2.out .bg {
+.introduction .core.out .bg {
 	-webkit-transform:scale(1.5);
 	-moz-transform:scale(1.5);
 	-o-transform:scale(1.5);
 	-ms-transform:scale(1.5);
 	transform:scale(1.5);
 }
-.introduction .slide2 .info {
+.introduction .core .info {
 	position:absolute;
 	left:50%;
-	top:50%;
 	z-index:5;
-	width:540px;
-	margin:-115px 0 0 -480px;
+	padding:53px 36px 61px 42px;
+	margin:0 0 0 -500px;
+	border:2px solid #000000;
 }
-.introduction .slide2 .info img {
-	margin:0 0 23px;
-}
-.introduction .slide2 .info h5 {
-	font-size:38px;
-	line-height:42px;
-	font-weight:normal;
+.introduction .core .info h5 {
+	font-size:68px;
+	line-height:68px;
+	font-weight:600;
 	text-transform:uppercase;
-	letter-spacing:1px;
+	letter-spacing:2px;
 	padding:0;
-	margin:0 0 8px;
+	margin:0 0 6px;
 }
-.introduction .slide2 .info p {
-	font-size:20px;
-	line-height:24px;
-	letter-spacing:1px;
-	margin:0 0 8px;
+.introduction .core .info p {
+	position:relative;
+	font-size:30px;
+	line-height:36px;
+	text-transform:uppercase;
+	letter-spacing:2px;
+	padding:15px 0 0;
+	margin:49px 0 0;
+}
+.introduction .core .info p:before {
+	content:'';
+	position:absolute;
+	left:0;
+	top:0;
+	width:88px;
+	height:2px;
+	background:#000000;
+}
+.introduction .slide1 .bg {
+	background:url('../pic/slide01.jpg') no-repeat center center;
+}
+.introduction .slide1 .info {
+	top:50%;
+	margin-top:-143px;
+}
+.introduction .slide2 .bg {
+	background:url('../pic/slide02.jpg') no-repeat center center;
+}
+.introduction .slide2 .info {
+	bottom:10.3%;
+}
+.introduction .slide3 .bg {
+	background:url('../pic/slide03.jpg') no-repeat center center;
+}
+.introduction .slide3 .info {
+	bottom:20.5%;
+	color:#ffffff;
+	border:2px solid #ffffff;
+}
+.introduction .slide3 .info p:before {
+	background:#ffffff;
+}
+.introduction .slide4 .bg {
+	background:url('../pic/slide04.jpg') no-repeat center center;
+}
+.introduction .slide4 .info {
+	bottom:16.1%;
+	color:#ffffff;
+	border:2px solid #ffffff;
+}
+.introduction .slide4 .info p:before {
+	background:#ffffff;
+}
+.introduction .slide5 .bg {
+	background:url('../pic/slide05.jpg') no-repeat center center;
+}
+.introduction .slide5 .info {
+	bottom:16.1%;
+	width:412px;
+	text-align:center;
+	padding:53px 42px 61px;
+	margin-left:-270px;
+}
+.introduction .slide5 .info p:before {
+	left:50%;
+	margin-left:-44px;
+}
+.introduction .slide6 .bg {
+	background:url('../pic/slide06.jpg') no-repeat center center;
+}
+.introduction .slide6 .info {
+	top:20.5%;
 }
 .section h1 {
 	width:960px;

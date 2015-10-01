@@ -188,9 +188,6 @@ button::-moz-focus-inner {
 	top:0;
 	width:100%;
 }
-.header.fixed img.logo {
-	top:16px;
-}
 .header .town {
 	position:absolute;
 	left:50%;
@@ -265,7 +262,7 @@ button::-moz-focus-inner {
 .header img.logo {
 	position:absolute;
 	left:50%;
-	top:6px;
+	top:16px;
 	margin-left:-447px;
 }
 .header ul {

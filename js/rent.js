@@ -2110,9 +2110,9 @@ if ( $('.rent').length > 0 ) {
 					var point = this.getBBox(0);
 					current.append('<p class="bubble">'+paths[arr[this.id]].space+'</p>');
 					current.find('.bubble').css({
-						'left': point.x+point.width/2+'px',
-						'top': point.y-65+'px',
-						'margin-left': '-30px'
+						'left': (point.x+point.x2)/2+'px',
+						'top': (point.y+point.y2)/2+'px',
+						'margin': '-75px 0 0 -30px'
 					});
 				},
 				function() {

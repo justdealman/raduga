@@ -2095,8 +2095,8 @@ if ( $('.rent').length > 0 ) {
 		});
 		var r = Raphael($(this).attr('id'), $(this).find('img').attr('width'), $(this).find('img').attr('height')),
 		attributes = {
-			fill: 'transparent',
-			opacity: 1,
+			fill: '#ffffff',
+			opacity: 0,
 			'stroke-width': 0
 		},
 		arr = new Array();
@@ -2107,9 +2107,6 @@ if ( $('.rent').length > 0 ) {
 			arr[obj.id] = shop;
 			obj.hover(
 				function() {
-					this.animate({
-						fill: 'transparent'
-					}, 0);
 					var point = this.getBBox(0);
 					current.append('<p class="bubble">'+paths[arr[this.id]].space+'</p>');
 					current.find('.bubble').css({
@@ -2119,10 +2116,6 @@ if ( $('.rent').length > 0 ) {
 					});
 				},
 				function() {
-					this.animate({
-						fill: attributes.fill,
-						stroke: attributes.stroke
-					}, 0);
 					current.find('.bubble').remove();
 				}
 			);

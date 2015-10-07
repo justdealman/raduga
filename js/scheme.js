@@ -599,7 +599,8 @@ var s2_f1 = {
 		href: 'http://sideful.ru',
 		title: 'Рапунзель',
 		space: '4',
-		path: 'M 87 221 L 87 245 L 95 245 L 103 245 L 103 221 L 103 197 L 95 197 L 87 197 L 87 221Z'
+		path: 'M 87 221 L 87 245 L 95 245 L 103 245 L 103 221 L 103 197 L 95 197 L 87 197 L 87 221Z',
+		tip: true
 	},
 	area_5: {
 		href: 'http://sideful.ru',
@@ -617,7 +618,8 @@ var s2_f1 = {
 		href: 'http://sideful.ru',
 		title: 'Кроха',
 		space: '8',
-		path: 'M300,124L300,135L310.5,135L321,135L321,124L321,113L310.5,113L300,113L300,124Z'
+		path: 'M300,124L300,135L310.5,135L321,135L321,124L321,113L310.5,113L300,113L300,124Z',
+		tip: true
 	},
 	area_10: {
 		href: 'http://sideful.ru',
@@ -635,7 +637,8 @@ var s2_f1 = {
 		href: 'http://sideful.ru',
 		title: 'Весело шагаю',
 		space: '13',
-		path: 'M 200.3 235.9 C 193.2 243.3 191 245.9 191 246.9 C 191 247.5 190.6 248 190 248 C 189.4 248 189 253 189 261 L 189 274 L 197.5 274 L 206 274 L 206 253 C 206 240.3 205.6 232 205 232 C 204.5 232 202.4 233.8 200.3 235.9Z'
+		path: 'M 200.3 235.9 C 193.2 243.3 191 245.9 191 246.9 C 191 247.5 190.6 248 190 248 C 189.4 248 189 253 189 261 L 189 274 L 197.5 274 L 206 274 L 206 253 C 206 240.3 205.6 232 205 232 C 204.5 232 202.4 233.8 200.3 235.9Z',
+		tip: true
 	},
 	area_14: {
 		href: 'http://sideful.ru',
@@ -3229,8 +3232,9 @@ if ( $('.scheme').length > 0 ) {
 					var point = this.getBBox(0);
 					current.append('<p class="bubble">'+paths[arr[this.id]].title+'</p>');
 					current.find('.bubble').css({
-						'left': point.x+'px',
-						'top': point.y-64+'px'
+						'left': (point.x+point.x2)/2+'px',
+						'top': (point.y+point.y2)/2+'px',
+						'margin': '-75px 0 0 -30px'
 					});
 				}
 			}, function() {

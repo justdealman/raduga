@@ -555,6 +555,62 @@ button::-moz-focus-inner {
 .introduction .slide6 .info {
 	top:20.5%;
 }
+.introduction .slide7 .bg {
+	background:url('../pic/slide07.jpg') no-repeat center center;
+}
+.introduction .slide7 .info {
+	top:50%;
+	width:456px;
+	text-align:center;
+	padding:42px 36px 28px;
+	margin:-193px 0 0 -585px;
+	border:1px solid #000000;
+}
+.introduction .slide7 .info h5 {
+	position:relative;
+	font-size:44px;
+	line-height:44px;
+	font-weight:normal;
+	padding:0 0 41px;
+	margin:0 0 40px;
+}
+.introduction .slide7 .info h5:after {
+	content:'';
+	position:absolute;
+	left:50%;
+	bottom:0;
+	width:47px;
+	height:2px;
+	margin-left:-23px;
+	background:#000000;
+}
+.introduction .slide7 .info h5 span {
+	display:block;
+	font-size:22px;
+	line-height:26px;
+	font-weight:300;
+	text-transform:none;
+	letter-spacing:0;
+	margin:10px 0 0;
+}
+.introduction .slide7 .info h5 strong {
+	font-weight:normal;
+}
+.introduction .slide7 .info p {
+	font-size:14px;
+	line-height:18px;
+	letter-spacing:0;
+	font-weight:300;
+	text-transform:none;
+	padding:0;
+	margin:0 0 18px;
+}
+.introduction .slide7 .info p:before {
+	display:none;
+}
+.introduction .slide7 .info img {
+	margin:0 0 10px;
+}
 .section h1 {
 	width:960px;
 	font-size:56px;

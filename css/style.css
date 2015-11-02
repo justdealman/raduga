@@ -603,13 +603,13 @@ button::-moz-focus-inner {
 	font-weight:300;
 	text-transform:none;
 	padding:0;
-	margin:0 0 18px;
+	margin:-9px 0 18px;
 }
 .introduction .slide7 .info p:before {
 	display:none;
 }
 .introduction .slide7 .info img {
-	margin:0 0 10px;
+	margin:0 0 19px;
 }
 .section h1 {
 	width:960px;

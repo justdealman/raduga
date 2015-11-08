@@ -556,7 +556,7 @@ button::-moz-focus-inner {
 	top:20.5%;
 }
 .introduction .slide7 .bg {
-	background:url('../pic/slide07.jpg') no-repeat center center;
+	background:url('../pic/slide07.jpg') no-repeat center 10%;
 }
 .introduction .slide7 .info {
 	top:50%;

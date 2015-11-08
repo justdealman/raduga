@@ -60,7 +60,7 @@ $(document).ready(function() {
 		if ( $(window).height() >= 600 && !/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
 			$('.wrapper').fullpage({
 				css3: true,
-				anchors: ['welcome', 'stores', 'special', 'gallery', 'contacts'],
+				anchors: ['welcome', 'stores', 'special', 'gallery', 'cinema', 'contacts'],
 				onLeave: function(index, nextIndex, direction) {
 					if ( nextIndex == 1 ) {
 						$('.header ul li').removeClass('active');
@@ -426,6 +426,12 @@ $(document).ready(function() {
 		$(this).height(38);
 		$(this).height(this.scrollHeight-28);
 	});
+	$('.section.cinema [data-film]').bind('click', function(event) {
+		event.preventDefault();
+		var t = $(this).parents('.cinema').find('.description[data-film-desc="'+$(this).attr('data-film')+'"]').show().siblings('.description').hide();
+		$('[data-film]').removeClass('active');
+		$(this).addClass('active');
+	}).filter(':first').click();
 });
 $(window).resize(function() {
 	if ( $('.introduction').length > 0 ) {

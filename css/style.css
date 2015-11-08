@@ -3379,3 +3379,172 @@ path:hover{
 .catalog.innersect li:hover h5 {
 	color:#ffffff;
 }
+
+/* Cinema */
+
+.section.cinema {
+	background:#2a63a7;
+}
+.section.cinema h1 {
+	color:#ffffff;
+}
+.section.cinema .core {
+	padding-top:0 !important;
+}
+.section.cinema .posters {
+	position:relative;
+	padding:0 0 0 324px;
+	margin:0 0 24px;
+}
+.section.cinema .posters > div {
+	overflow:hidden;
+	position:absolute;
+	left:0;
+	top:0;
+	width:300px;
+	height:428px;
+	cursor:pointer;
+	transition:all 0.2s ease-in-out;
+	-webkit-transition:all 0.2s ease-in-out;
+	-moz-transition:all 0.2s ease-in-out;
+	-o-transition:all 0.2s ease-in-out;
+	opacity:0.7;
+}
+.section.cinema .posters > div img {
+	position:absolute;
+	left:0;
+	top:0;
+	width:300px;
+	height:428px;
+}
+.section.cinema .posters ul {
+	overflow:hidden;
+	clear:both;
+	overflow:hidden;
+	width:656px;
+	height:428px;
+	margin:0;
+}
+.section.cinema .posters ul li {
+	overflow:hidden;
+	position:relative;
+	float:left;
+	width:144px;
+	height:206px;
+	cursor:pointer;
+	margin:0 20px 16px 0;
+	transition:all 0.2s ease-in-out;
+	-webkit-transition:all 0.2s ease-in-out;
+	-moz-transition:all 0.2s ease-in-out;
+	-o-transition:all 0.2s ease-in-out;
+	opacity:0.75;
+}
+.section.cinema .posters ul li img {
+	position:absolute;
+	left:0;
+	top:0;
+	width:144px;
+	height:206px;
+}
+.section.cinema .posters .active {
+	opacity:1;
+}
+.section.cinema .description {
+	display:none;
+	color:#ffffff;
+}
+.section.cinema .description h3 {
+	font-size:22px;
+	line-height:26px;
+	padding:0;
+	margin:0 0 16px;
+}
+.section.cinema .description p {
+	font-size:14px;
+	line-height:17px;
+	margin:0 0 17px;
+}
+@media screen and (max-height:840px) {
+	.enabled .section.cinema .films {
+		-webkit-transform:scale(0.95);
+		-webkit-transform-origin:center top;
+		-moz-transform:scale(0.95);
+		-moz-transform-origin:center top;
+		-o-transform:scale(0.95);
+		-o-transform-origin:center top;
+		transform:scale(0.95);
+		transform-origin:center top;
+	}
+}
+@media screen and (max-height:800px) {
+	.enabled .section.cinema .films {
+		-webkit-transform:scale(0.9);
+		-webkit-transform-origin:center top;
+		-moz-transform:scale(0.9);
+		-moz-transform-origin:center top;
+		-o-transform:scale(0.9);
+		-o-transform-origin:center top;
+		transform:scale(0.9);
+		transform-origin:center top;
+	}
+}
+@media screen and (max-height:770px) {
+	.enabled .section.cinema .films {
+		-webkit-transform:scale(0.85);
+		-webkit-transform-origin:center top;
+		-moz-transform:scale(0.85);
+		-moz-transform-origin:center top;
+		-o-transform:scale(0.85);
+		-o-transform-origin:center top;
+		transform:scale(0.85);
+		transform-origin:center top;
+	}
+}
+@media screen and (max-height:740px) {
+	.enabled .section.cinema .films {
+		-webkit-transform:scale(0.8);
+		-webkit-transform-origin:center top;
+		-moz-transform:scale(0.8);
+		-moz-transform-origin:center top;
+		-o-transform:scale(0.8);
+		-o-transform-origin:center top;
+		transform:scale(0.8);
+		transform-origin:center top;
+	}
+}
+@media screen and (max-height:700px) {
+	.enabled .section.cinema .films {
+		-webkit-transform:scale(0.75);
+		-webkit-transform-origin:center top;
+		-moz-transform:scale(0.75);
+		-moz-transform-origin:center top;
+		-o-transform:scale(0.75);
+		-o-transform-origin:center top;
+		transform:scale(0.75);
+		transform-origin:center top;
+	}
+}
+@media screen and (max-height:660px) {
+	.enabled .section.cinema .films {
+		-webkit-transform:scale(0.7);
+		-webkit-transform-origin:center top;
+		-moz-transform:scale(0.7);
+		-moz-transform-origin:center top;
+		-o-transform:scale(0.7);
+		-o-transform-origin:center top;
+		transform:scale(0.7);
+		transform-origin:center top;
+	}
+}
+@media screen and (max-height:630px) {
+	.enabled .section.cinema .films {
+		-webkit-transform:scale(0.65);
+		-webkit-transform-origin:center top;
+		-moz-transform:scale(0.65);
+		-moz-transform-origin:center top;
+		-o-transform:scale(0.65);
+		-o-transform-origin:center top;
+		transform:scale(0.65);
+		transform-origin:center top;
+	}
+}

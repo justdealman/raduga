@@ -701,6 +701,7 @@ button::-moz-focus-inner {
 	color:#000000;
 	font-size:14px;
 	line-height:18px;
+	white-space:nowrap;
 	padding:6px 12px 7px;
 	background:#ffffff;
 	-webkit-border-radius:5px;
@@ -2320,6 +2321,7 @@ p.bubble {
 	z-index:50;
 	font-size:14px;
 	line-height:17px;
+	white-space:nowrap;
 	padding:11px 25px 14px 46px;
 	background:#ffffff url('../img/space_icon.png') no-repeat 11px 11px;
 	-webkit-box-shadow:0 0 15px rgba(0,0,0,0.2);

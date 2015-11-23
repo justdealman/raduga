@@ -4,7 +4,7 @@ var s1_f1 = {
 		href: '/radugakmr/stores/sportivnye-tovary/adidas/',
 		title: 'Adidas',
 		space: '1',
-		type: 't1',
+		type: 't3 t9 t13',
 		path: 'M 4 106 L 4 208 L 19 208 L 34 208 L 34 211 L 34 214 L 105 214 L 176 214 L 176 116 L 176 18 L 253.5 18 L 331 18 L 331 11 L 331 4 L 167.5 4 L 4 4 L 4 106Z'
 	},
 	area_2: {
@@ -3557,13 +3557,15 @@ if ( $('.scheme').length > 0 ) {
 		current.find('.selected svg path').attr('fill', '#a9bc53');
 		for (var key in paths) {
 			var val = paths[key];
-			if ( val['type'] == type ) {
-				var path = val['path'].replace(/(\d)\s+(?=\d)/g, '$1,').replace(/\s/g, '');
-				for (var key in hightlightColors) {
-					current.find('.selected svg path[d="'+path+'"]').attr('fill', hightlightColors[type]);
+			var arr = val['type'].split(' ');
+			arr.forEach(function(item) {
+				if ( item == type ) {
+					var path = val['path'].replace(/(\d)\s+(?=\d)/g, '$1,').replace(/\s/g, '');
+					for (var key in hightlightColors) {
+						current.find('.selected svg path[d="'+path+'"]').attr('fill', hightlightColors[item]);
+					}
 				}
-				
-			}
+			});
 		}
 		event.preventDefault();
 	});
@@ -3581,8 +3583,9 @@ if ( $('.scheme').length > 0 ) {
 		var val = paths[e];
 		var path = val['path'].replace(/(\d)\s+(?=\d)/g, '$1,').replace(/\s/g, '');
 		var type = val['type'];
-		if ( type ) {
-			current.find('.selected svg path[d="'+path+'"]').attr('fill', hightlightColors[type]);
+		var arr = val['type'].split(' ');
+		if ( arr[0] ) {
+			current.find('.selected svg path[d="'+path+'"]').attr('fill', hightlightColors[arr[0]]);
 		}
 		else {
 			current.find('.selected svg path[d="'+path+'"]').attr('fill', '#000000');

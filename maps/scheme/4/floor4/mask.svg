@@ -5,7 +5,7 @@
  width="960.000000pt" height="634.000000pt" viewBox="0 0 960.000000 634.000000"
  preserveAspectRatio="xMidYMid meet">
 <metadata>
-Created by potrace 1.12, written by Peter Selinger 2001-2015
+Created by potrace 1.13, written by Peter Selinger 2001-2015
 </metadata>
 <g transform="translate(0.000000,634.000000) scale(0.100000,-0.100000)"
 fill="#000000" stroke="none">
@@ -13,7 +13,8 @@ fill="#000000" stroke="none">
 <path d="M2190 5830 l0 -470 185 0 185 0 0 470 0 470 -185 0 -185 0 0 -470z"/>
 <path d="M2590 5830 l0 -470 1010 0 1010 0 0 470 0 470 -1010 0 -1010 0 0
 -470z"/>
-<path d="M4640 5830 l0 -470 390 0 390 0 0 470 0 470 -390 0 -390 0 0 -470z"/>
+<path d="M4640 5830 l0 -470 185 0 185 0 0 470 0 470 -185 0 -185 0 0 -470z"/>
+<path d="M5040 5830 l0 -470 190 0 190 0 0 470 0 470 -190 0 -190 0 0 -470z"/>
 <path d="M5450 5830 l0 -470 380 0 380 0 0 470 0 470 -380 0 -380 0 0 -470z"/>
 <path d="M8460 5765 l0 -535 -680 0 -680 0 0 -1065 0 -1065 400 0 400 0 0
 -495 0 -495 830 0 830 0 0 2095 0 2095 -550 0 -550 0 0 -535z"/>

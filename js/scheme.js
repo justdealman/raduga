@@ -3878,7 +3878,9 @@ if ( $('.scheme').length > 0 ) {
 		current.find('.selected svg path').attr('fill', '#a9bc53');
 		for (var key in paths) {
 			var val = paths[key];
-			var arr = val['type'].split(' ');
+			if ( val['type'] ) {
+				var arr = val['type'].split(' ');
+			}
 			arr.forEach(function(item) {
 				if ( item == type ) {
 					var path = val['path'].replace(/(\d)\s+(?=\d)/g, '$1,').replace(/\s/g, '');

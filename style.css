@@ -555,104 +555,6 @@ button::-moz-focus-inner {
 .introduction .slide6 .info {
 	top:20.5%;
 }
-.introduction .slide7 .bg {
-	background:url('../pic/slide07.jpg') no-repeat center 10%;
-}
-.introduction .slide7 .info {
-	top:50%;
-	width:456px;
-	text-align:center;
-	padding:42px 36px 28px;
-	margin:-193px 0 0 -585px;
-	border:1px solid #000000;
-}
-.introduction .slide7 .info h5 {
-	position:relative;
-	font-size:44px;
-	line-height:44px;
-	font-weight:normal;
-	padding:0 0 41px;
-	margin:0 0 40px;
-}
-.introduction .slide7 .info h5:after {
-	content:'';
-	position:absolute;
-	left:50%;
-	bottom:0;
-	width:47px;
-	height:2px;
-	margin-left:-23px;
-	background:#000000;
-}
-.introduction .slide7 .info h5 span {
-	display:block;
-	font-size:22px;
-	line-height:26px;
-	font-weight:300;
-	text-transform:none;
-	letter-spacing:0;
-	margin:10px 0 0;
-}
-.introduction .slide7 .info h5 strong {
-	font-weight:normal;
-}
-.introduction .slide7 .info p {
-	font-size:14px;
-	line-height:18px;
-	letter-spacing:0;
-	font-weight:300;
-	text-transform:none;
-	padding:0;
-	margin:-9px 0 18px;
-}
-.introduction .slide7 .info p:before {
-	display:none;
-}
-.introduction .slide7 .info img {
-	margin:0 0 19px;
-}
-.introduction .slide8 .bg {
-	background:url('../pic/slide08.jpg') no-repeat left top;
-	-webkit-background-size:contain !important;
-	-moz-background-size:contain !important;
-	-o-background-size:contain !important;
-	background-size:contain !important;
-}
-.introduction .slide9 .bg {
-	background:url('../pic/slide09.jpg') no-repeat left top;
-	-webkit-background-size:contain !important;
-	-moz-background-size:contain !important;
-	-o-background-size:contain !important;
-	background-size:contain !important;
-}
-.introduction .slide10 .bg {
-	background:url('../pic/slide10.jpg') no-repeat left top;
-	-webkit-background-size:contain !important;
-	-moz-background-size:contain !important;
-	-o-background-size:contain !important;
-	background-size:contain !important;
-}
-.introduction .slide11 .bg {
-	background:url('../pic/slide11.jpg') no-repeat left top;
-	-webkit-background-size:contain !important;
-	-moz-background-size:contain !important;
-	-o-background-size:contain !important;
-	background-size:contain !important;
-}
-.introduction .slide12 .bg {
-	background:url('../pic/slide12.jpg') no-repeat left top;
-	-webkit-background-size:contain !important;
-	-moz-background-size:contain !important;
-	-o-background-size:contain !important;
-	background-size:contain !important;
-}
-.introduction .slide13 .bg {
-	background:url('../pic/slide13.jpg') no-repeat left top;
-	-webkit-background-size:contain !important;
-	-moz-background-size:contain !important;
-	-o-background-size:contain !important;
-	background-size:contain !important;
-}
 .section h1 {
 	width:960px;
 	font-size:56px;
@@ -2385,22 +2287,6 @@ p.bubble:before {
 .rent .plan > div img {
 	display:none;
 }
-.rent .plan > div .filled {
-	position:absolute;
-	left:0;
-	top:353px;
-	color:#ffffff;
-	font-size:16px;
-	line-height:20px;
-	font-weight:normal;
-	text-transform:uppercase;
-	padding:10px 72px 10px;
-	margin:0;
-	background:#f85c76;
-	-webkit-box-shadow:0 0 15px rgba(0,0,0,0.25);
-	-moz-box-shadow:0 0 15px rgba(0,0,0,0.25);
-	box-shadow:0 0 15px rgba(0,0,0,0.25);
-}
 .rent .information {
 	text-align:right;
 	margin:51px 0 0;
@@ -3424,6 +3310,8 @@ path:hover{
 	color:#ffffff;
 }
 
+
+
 /* Cinema */
 
 .section.cinema {
@@ -3591,280 +3479,46 @@ path:hover{
 		transform:scale(0.65);
 		transform-origin:center top;
 	}
+ } 
+.introduction .slide8 .bg {
+	background:url('../pic/slide08.jpg') no-repeat left top;
+	-webkit-background-size:contain !important;
+	-moz-background-size:contain !important;
+	-o-background-size:contain !important;
+	background-size:contain !important;
 }
-
-.cinema-modal {
-	display:none;
-	position:absolute;
-	left:50%;
-	top:0;
-	z-index:1010;
-	width:960px;
-	margin-left:-480px;
+.introduction .slide9 .bg {
+	background:url('../pic/slide09.jpg') no-repeat left top;
+	-webkit-background-size:contain !important;
+	-moz-background-size:contain !important;
+	-o-background-size:contain !important;
+	background-size:contain !important;
 }
-.enabled .cinema-modal {
-	left:0;
-	width:100%;
-	height:100%;
-	margin-left:0;
-	overflow-y:scroll;
+.introduction .slide10 .bg {
+	background:url('../pic/slide10.jpg') no-repeat left top;
+	-webkit-background-size:contain !important;
+	-moz-background-size:contain !important;
+	-o-background-size:contain !important;
+	background-size:contain !important;
 }
-.cinema-modal > div {
-	position:absolute;
-	left:50%;
-	top:0;
-	z-index:1010;
-	width:820px;
-	padding:53px 70px 7px;
-	margin-left:-480px;
-	background:#ffffff;
-	-webkit-box-shadow:0 0 20px rgba(0,0,0,0.15);
-	-moz-box-shadow:0 0 20px rgba(0,0,0,0.15);
-	box-shadow:0 0 20px rgba(0,0,0,0.15);
+.introduction .slide11 .bg {
+	background:url('../pic/slide11.jpg') no-repeat left top;
+	-webkit-background-size:contain !important;
+	-moz-background-size:contain !important;
+	-o-background-size:contain !important;
+	background-size:contain !important;
 }
-.enabled .cinema-modal > div {
-	position:relative;
-	left:auto;
-	margin:0 auto;
+.introduction .slide12 .bg {
+	background:url('../pic/slide12.jpg') no-repeat left top;
+	-webkit-background-size:contain !important;
+	-moz-background-size:contain !important;
+	-o-background-size:contain !important;
+	background-size:contain !important;
 }
-.cinema-modal > div .close {
-	position:absolute;
-	right:3px;
-	top:2px;
-	display:block;
-	width:20px;
-	height:20px;
-	cursor:pointer;
-	background:url('../img/feedback_close.png') no-repeat left top;
-}
-.cinema-modal h2 {
-	font-size:42px;
-	line-height:46px;
-	text-transform:uppercase;
-	letter-spacing:1px;
-	padding:0;
-	margin:0 0 47px -2px;
-}
-.cinema-modal .poster {
-	margin:0 0 24px;
-}
-.cinema-modal .poster div {
-	position:relative;
-	display:inline-block;
-	width:220px;
-	height:308px;
-	cursor:pointer;
-	vertical-align:top;
-	margin:0 1px 4px 0;
-}
-.cinema-modal .poster div.active:after {
-	content:'';
-	position:absolute;
-	left:0;
-	top:0;
-	z-index:2;
-	width:100%;
-	height:100%;
-	border:3px solid #aac23e;
-	-moz-box-shadow:border-box;
-	-webkit-box-shadow:border-box;
-	box-sizing:border-box;
-}
-.cinema-modal .poster div img {
-	position:absolute;
-	left:0;
-	top:0;
-	width:220px;
-	height:308px;
-}
-.cinema-modal .poster ul {
-	display:inline-block;
-	width:400px;
-	vertical-align:top;
-	margin:0 -50px 0 0;
-}
-.cinema-modal .poster ul li {
-	position:relative;
-	display:inline-block;
-	width:72px;
-	height:100px;
-	cursor:pointer;
-	vertical-align:top;
-	margin:0 1px 4px 0;
-}
-.cinema-modal .poster ul li.active:after {
-	content:'';
-	position:absolute;
-	left:0;
-	top:0;
-	z-index:2;
-	width:100%;
-	height:100%;
-	border:2px solid #aac23e;
-	-moz-box-shadow:border-box;
-	-webkit-box-shadow:border-box;
-	box-sizing:border-box;
-}
-.cinema-modal .poster ul li img {
-	position:absolute;
-	left:0;
-	top:0;
-	width:72px;
-	height:100px;
-}
-.cinema-modal .schedule {
-	margin:0 0 34px;
-}
-.cinema-modal .schedule .nav {
-	display:table;
-	width:100%;
-}
-.cinema-modal .schedule .nav ul {
-	display:table-row;
-	width:100%;
-	margin:0;
-}
-.cinema-modal .schedule .nav ul li {
-	display:table-cell;
-	vertical-align:middle;
-	cursor:pointer;
-	background:#ffffff;
-	border-top:1px solid #e5e5e5;
-	border-right:1px solid #e5e5e5;
-}
-.cinema-modal .schedule .nav ul li:first-child {
-	border-left:1px solid #e5e5e5;
-}
-.cinema-modal .schedule .nav ul li.active {
-	background:#e5e5e5;
-}
-.cinema-modal .schedule .nav ul li span {
-	display:block;
-	color:#000000;
-	font-size:14px;
-	line-height:17px;
-	font-weight:bold;
-	text-align:center;
-	padding:13px 12px 15px;
-	-moz-box-shadow:border-box;
-	-webkit-box-shadow:border-box;
-	box-sizing:border-box;
-}
-.cinema-modal .schedule .tab {
-	display:none;
-	padding:29px 20px 28px;
-	background:#e5e5e5;
-}
-.cinema-modal .schedule .tab ul {
-	width:582px;
-	margin:0 0 0 124px;
-	-webkit-column-count:3;
-    -moz-column-count:3;
-    column-count:3;
-	-webkit-column-gap:10px;
-    -moz-column-gap:10px;
-    column-gap:10px;
-}
-.cinema-modal .schedule .tab ul li {
-	position:relative;
-	display:inline-block;
-	font-size:14px;
-	line-height:24px;
-	vertical-align:top;
-	padding:0 0 0 19px;
-}
-.cinema-modal .schedule .tab ul li strong {
-	font-size:18px;
-}
-.cinema-modal .schedule .tab ul li span {
-	color:#aac23e;
-	font-weight:bold;
-}
-.cinema-modal .schedule .tab ul li:before {
-	content:'';
-	position:absolute;
-	left:0;
-	top:10px;
-	width:6px;
-	height:6px;
-	background:#aac23e;
-	-webkit-border-radius:50%;
-	border-radius:50%;
-}
-.cinema-modal .general {
-	clear:both;
-	overflow:hidden;
-	margin:0 0 11px;
-}
-.cinema-modal .general .pic {
-	position:relative;
-	float:left;
-	width:140px;
-	height:196px;
-	margin:4px 40px 15px 0;
-}
-.cinema-modal .general .pic img {
-	width:140px;
-	height:196px;
-}
-.cinema-modal .general .info {
-	float:left;
-	width:280px;
-}
-.cinema-modal .general .info h3 {
-	font-size:18px;
-	line-height:21px;
-	font-weight:normal;
-	text-transform:uppercase;
-	padding:0;
-	margin:0 0 9px;
-}
-.cinema-modal .general .info ul {
-	margin:0 0 15px;
-}
-.cinema-modal .general .info ul li {
-	font-size:14px;
-	line-height:20px;
-}
-.cinema-modal .general .info ul li span {
-	color:#636363;
-}
-.cinema-modal .general .video {
-	position:relative;
-	float:right;
-	width:320px;
-	height:197px;
-	margin:3px 0 15px;
-}
-.cinema-modal .general .video a {
-	position:relative;
-	z-index:1;
-	display:block;
-	width:320px;
-	height:197px;
-}
-.cinema-modal .general .video a:after {
-	content:'';
-	position:absolute;
-	left:50%;
-	top:50%;
-	width:79px;
-	height:79px;
-	margin:-40px 0 0 -40px;
-	background:url('../img/play_icon.png') no-repeat center center;
-}
-.cinema-modal .general .video img {
-	position:absolute;
-	left:0;
-	top:0;
-	width:320px;
-	height:197px;
-}
-.cinema-modal .description {
-	margin:0 0 20px;
-}
-.cinema-modal .description p {
-	font-size:14px;
-	line-height:17px;
-	margin:0 0 17px;
+.introduction .slide13 .bg {
+	background:url('../pic/slide13.jpg') no-repeat left top;
+	-webkit-background-size:contain !important;
+	-moz-background-size:contain !important;
+	-o-background-size:contain !important;
+	background-size:contain !important;
 }

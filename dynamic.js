@@ -66,18 +66,34 @@ function sectionZoom() {
 $(document).ready(function() {
 	if ( $('.welcome').length > 0 ) {
 		if ( $(window).height() >= 600 && !/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+			// тут условие если есть кино
+			if ($('body').hasClass('rub')){
+				$('.wrapper').fullpage({
+					css3: true,
+					anchors: ['welcome', 'stores', 'special', 'gallery', 'cinema', 'contacts'],
+					onLeave: function(index, nextIndex, direction) {
+						if ( nextIndex == 1 ) {
+							$('.header ul li').removeClass('active');
+						}
+						else {
+							$('.header ul li:nth-child('+eval(nextIndex-1)+')').addClass('active').siblings().removeClass('active');
+						}
+					}
+				});	
+			}else {
 			$('.wrapper').fullpage({
 				css3: true,
-				anchors: ['welcome', 'stores', 'special', 'gallery', 'cinema', 'contacts'],
+				anchors: ['welcome', 'stores', 'special', 'gallery', 'contacts'],
 				onLeave: function(index, nextIndex, direction) {
 					if ( nextIndex == 1 ) {
 						$('.header ul li').removeClass('active');
 					}
 					else {
-						$('.header ul li:nth-child('+eval(nextIndex-1)+')').addClass('active').siblings().removeClass('active');
+						$('.header ul li:nth-child('+eval(nextIndex)+')').addClass('active').siblings().removeClass('active');
 					}
 				}
 			});
+			}
 			$.fn.fullpage.reBuild();
 			$('body').addClass('enabled');
 		}
@@ -105,7 +121,8 @@ $(document).ready(function() {
 	$('.enabled .header a[href="#welcome"]').bind('click', function() {
 		$('.enabled .header ul li').removeClass('active');
 	});
-	if ( $('.introduction').length > 0 ) {
+ 	if ( $('.introduction').length > 0 ) {
+ 		introSize();
 		if ( $('.introduction .container > div').length > 1 ) {
 			$('.introduction').slides({
 				generatePagination: true,
@@ -147,8 +164,7 @@ $(document).ready(function() {
 				}
 			});
 		}
-		introSize();
-	}
+ 	}
 	$('.about .plan > ul li a').bind('click', function() {
 		$(this).parent().addClass('active').siblings().removeClass('active');
 		return false;
@@ -440,55 +456,6 @@ $(document).ready(function() {
 		$('[data-film]').removeClass('active');
 		$(this).addClass('active');
 	}).filter(':first').click();
-
-	$('.cinema-modal > div > div').each(function() {
-		$(this).find('.schedule .nav ul li').bind('click', function(e) {
-			e.preventDefault();
-			$(this).parents('.nav').siblings('[data-tab="'+$(this).attr('data-tab-open')+'"]').show().siblings('[data-tab]').hide();
-			$(this).addClass('active').siblings().removeClass();
-		}).filter(':first').click();
-	});
-	$('[data-film-open]').bind('click', function(e) {
-		e.preventDefault();
-		$('[data-film-open]').removeClass('active');
-		$(this).addClass('active');
-		$('[data-film-more="'+$(this).attr('data-film-open')+'"]').show().siblings('[data-film-more]').hide();
-	}).filter(':first').click();
-	if ( $('.cinema-modal').length > 0 ) {
-		$('.cinema-modal > div').append('<span class="close"></span>');
-		$('[data-cinema="open"]').bind('click', function(e) {
-			e.preventDefault();
-			var t = 0;
-			if ( $('.enabled').length > 0 ) {
-				$('.cinema-modal').css({
-					'top': t+'px'
-				}).stop(true,true).fadeIn(250);
-				$.fn.fullpage.setMouseWheelScrolling(false);
-			}
-			else {
-				var t = $(document).scrollTop();
-				$('.cinema-modal').css({
-					'top': t+'px'
-				}).stop(true,true).fadeIn(250);
-			}
-			$('.fade').stop(true,true).fadeIn(250);
-		});
-		$('.fade, .cinema-modal .close').bind('click', function() {
-			$('.cinema-modal, .fade').stop(true,true).fadeOut(250);
-			if ( $('.enabled').length > 0 ) {
-				$.fn.fullpage.setMouseWheelScrolling(true);
-			}
-		});
-		$('.cinema-modal').click(function() {
-			$('.cinema-modal, .fade').stop(true,true).fadeOut(250);
-			if ( $('.enabled').length > 0 ) {
-				$.fn.fullpage.setMouseWheelScrolling(true);
-			}
-		});
-		$('.cinema-modal > div').click(function(event){
-			event.stopPropagation();
-		});
-	}
 });
 $(window).resize(function() {
 	if ( $('.introduction').length > 0 ) {
@@ -502,9 +469,9 @@ $(window).resize(function() {
 	}
 });
 $(window).load(function() {
-	/*if ( $('.introduction').length > 0 ) {
+	if ( $('.introduction').length > 0 ) {
 		introSize();
-	}*/
+	}
 	if ( $('.new-panel').length > 0 ) {
 		$('.new-panel').delay(1500).fadeIn(250);
 	}

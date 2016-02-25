@@ -489,6 +489,32 @@ $(document).ready(function() {
 			event.stopPropagation();
 		});
 	}
+	if ( $('.cinema-page .big-poster').length > 0 ) {
+		$('.cinema-page').css({
+			'padding-top': $('.big-poster').attr('data-padding')+'px',
+			'background': 'url("'+$('.big-poster').attr('src')+'") no-repeat center 134px fixed'
+		});
+	}
+	if ( $('.cinema-page').length > 0 ) {
+		$('.cinema-page .nav li a').bind('click', function(e) {
+			e.preventDefault();
+			$(this).parents('ul').siblings('[data-day="'+$(this).attr('href')+'"]').show().siblings('[data-day]').hide();
+			$(this).parent().addClass('active').siblings().removeClass();
+		}).filter(':first').click();
+		$('.cinema-page .poster [data-film]').bind('click', function(e) {
+			e.preventDefault();
+			$('.cinema-modal .poster [data-film-open="'+$(this).attr('data-film')+'"]').trigger('click');
+			$('.cinema-modal .schedule .nav ul li[data-tab-open="'+eval($('.cinema-page .nav li.active').index()+1)+'"]').trigger('click');
+		});
+	}
+	if ( $('.cinema-page .special-b').length > 0 ) {
+		$('.cinema-page .special-b ul li').each(function() {
+			$(this).css({
+				'background': 'url("'+$(this).find('img').attr('src')+'") no-repeat center center',
+				'background-size': 'cover'
+			});
+		});
+	}
 });
 $(window).resize(function() {
 	if ( $('.introduction').length > 0 ) {

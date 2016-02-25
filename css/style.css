@@ -3868,3 +3868,364 @@ path:hover{
 	line-height:17px;
 	margin:0 0 17px;
 }
+.cinema-page {
+	position:relative;
+	margin:-80px 0 -50px;
+}
+.cinema-page .big-poster {
+	display:none;
+}
+.cinema-page > div {
+	width:960px;
+	padding:44px 40px 39px 40px;
+	margin:0 auto;
+	background:#ffffff;
+	-webkit-box-shadow:0 0 40px rgba(0,0,0,0.2);
+	box-shadow:0 0 40px rgba(0,0,0,0.2);
+}
+.cinema-page .title {
+	position:relative;
+	margin:0 0 46px;
+}
+.cinema-page h1 {
+	color:#080626;
+	font-size:56px;
+	line-height:66px;
+	text-transform:uppercase;
+	letter-spacing:3px;
+	text-indent:-4px;
+	padding:0;
+	margin:0;
+}
+.cinema-page h1 img {
+	display:inline-block;
+	vertical-align:top;
+	margin:17px 2px 0 4px;
+}
+.cinema-page .title .map {
+	position:absolute;
+	right:0;
+	top:-24px;
+	width:83px;
+	color:#000000;
+	text-align:center;
+	border:2px solid #080626;
+}
+.cinema-page .title .map a {
+	display:block;
+	padding:5px 10px 11px;
+	transition:all 0.2s ease-in-out;
+	-webkit-transition:all 0.2s ease-in-out;
+	-moz-transition:all 0.2s ease-in-out;
+	-o-transition:all 0.2s ease-in-out;
+}
+.cinema-page .title .map a:hover {
+	color:#ffffff;
+	background:#080626;
+}
+.cinema-page .title .map p {
+	font-size:14px;
+	line-height:18px;
+	font-weight:300;
+	text-transform:uppercase;
+	margin:0;
+}
+.cinema-page .title .map p strong {
+	display:block;
+	font-size:18px;
+	line-height:22px;
+	font-weight:normal;
+	margin:0 0 2px;
+}
+.cinema-page .title .map h6 {
+	font-size:12px;
+	line-height:16px;
+	font-weight:normal;
+	margin:3px 0 0;
+}
+.cinema-page .title .map h6 span {
+	border-bottom:1px solid #080626;
+}
+.cinema-page .title .map a:hover h6 span {
+	border-bottom:1px solid #ffffff;
+}
+.cinema-page .data {
+	position:relative;
+	height:63px;
+	margin:0 0 40px;
+}
+.cinema-page .data:after {
+	content:'';
+	position:absolute;
+	left:0;
+	top:33px;
+	width:100%;
+	height:1px;
+	background:#b2b2b2;
+}
+.cinema-page .data p {
+	position:absolute;
+	font-size:16px;
+	line-height:20px;
+	margin:0;
+}
+.cinema-page .data p a {
+	color:#080626;
+	border-bottom:1px solid #080626;
+}
+.cinema-page .data p a:hover {
+	border-bottom:1px solid transparent;
+}
+.cinema-page .data .mode {
+	left:0;
+	top:0;
+	color:#848484;
+	padding:0 0 0 28px;
+	background:url('../img/shop_mode_icon.png') no-repeat left 2px;
+}
+.cinema-page .data .phone {
+	right:0;
+	top:0;
+}
+.cinema-page .data .website {
+	left:0;
+	bottom:0;
+}
+.cinema-page .data .social {
+	position:absolute;
+	right:0;
+	bottom:0;
+	margin:0;
+}
+.cinema-page .data .social li {
+	position:relative;
+	float:left;
+	width:20px;
+	height:16px;
+	margin:0 0 0 12px;
+}
+.cinema-page .data .social li:first-child {
+	margin-left:0;
+}
+.cinema-page .data .social li a {
+	display:block;
+	width:20px;
+	height:16px;
+}
+.cinema-page .data .social li img {
+	position:absolute;
+	top:0;
+	right:0;
+	bottom:0;
+	left:0;
+	max-width:20px;
+	max-height:16px;
+	margin:auto;
+}
+.cinema-page .nav {
+	margin:0 0 33px;
+}
+.cinema-page .nav li {
+	display:inline-block;
+	vertical-align:top;
+	margin:0 -3px 6px 0;
+}
+.cinema-page .nav li a {
+	display:block;
+	font-size:14px;
+	line-height:17px;
+	padding:6px 18px 10px 17px;
+	border:2px solid transparent;
+}
+.cinema-page .nav li.active a {
+	border:2px solid #080626;
+}
+.cinema-page .poster {
+	margin:0 0 20px;
+}
+.cinema-page .poster div {
+	position:relative;
+	display:inline-block;
+	width:258px;
+	height:359px;
+	cursor:pointer;
+	vertical-align:top;
+	margin:0 1px 4px 0;
+}
+.cinema-page .poster div:hover:after {
+	content:'';
+	position:absolute;
+	left:0;
+	top:0;
+	z-index:2;
+	width:100%;
+	height:100%;
+	border:3px solid #aac23e;
+	-moz-box-shadow:border-box;
+	-webkit-box-shadow:border-box;
+	box-sizing:border-box;
+}
+.cinema-page .poster div img {
+	position:absolute;
+	left:0;
+	top:0;
+	width:258px;
+	height:359px;
+}
+.cinema-page .poster ul {
+	display:inline-block;
+	width:480px;
+	vertical-align:top;
+	margin:0 -50px 0 0;
+}
+.cinema-page .poster ul li {
+	position:relative;
+	display:inline-block;
+	width:84px;
+	height:117px;
+	cursor:pointer;
+	vertical-align:top;
+	margin:0 1px 4px 0;
+}
+.cinema-page .poster ul li:hover:after {
+	content:'';
+	position:absolute;
+	left:0;
+	top:0;
+	z-index:2;
+	width:100%;
+	height:100%;
+	border:2px solid #aac23e;
+	-moz-box-shadow:border-box;
+	-webkit-box-shadow:border-box;
+	box-sizing:border-box;
+}
+.cinema-page .poster ul li img {
+	position:absolute;
+	left:0;
+	top:0;
+	width:84px;
+	height:117px;
+}
+.cinema-page .description {
+	margin:0 0 24px;
+}
+.cinema-page .description p {
+	font-size:16px;
+	line-height:24px;
+	margin:0 0 24px;
+}
+.cinema-page .description ul {
+	text-align:center;
+	margin:-15px 0 24px;
+}
+.cinema-page .description ul li {
+	position:relative;
+	display:inline-block;
+	vertical-align:top;
+	padding:0 51px;
+	margin:0 0 0 -3px;
+}
+.cinema-page .description ul li:before {
+	content:'';
+	position:absolute;
+	left:0;
+	top:17px;
+	width:1px;
+	height:56px;
+	background:#aac23e;
+}
+.cinema-page .description ul li:first-child {
+	margin-left:0;
+}
+.cinema-page .description ul li:first-child:before {
+	display:none;
+}
+.cinema-page .description ul li span {
+	display:block;
+	color:#aac23e;
+	font-size:24px;
+	line-height:80px;
+	font-weight:300;
+}
+.cinema-page .description ul li span strong {
+	font-size:80px;
+}
+.cinema-page .special-b {
+	margin:0 0 11px;
+}
+.cinema-page .special-b h5 {
+	font-size:18px;
+	line-height:24px;
+	text-align:center;
+	text-transform:uppercase;
+	padding:0;
+	margin:0 0 29px;
+}
+.cinema-page .special-b ul {
+	clear:both;
+	overflow:hidden;
+	margin:0;
+}
+.cinema-page .special-b ul li {
+	float:left;
+	width:460px;
+	height:278px;
+	margin:0 40px 40px 0;
+}
+.cinema-page .special-b ul li:nth-child(2n) {
+	margin-right:-10px;
+}
+.cinema-page .special-b ul li a {
+	display:block;
+	width:460px;
+	height:278px;
+}
+.cinema-page .special-b ul li img {
+	display:none;
+}
+.cinema-page .share {
+	text-align:center;
+	margin:0 0 30px;
+}
+.cinema-page .share h5 {
+	display:inline-block;
+	font-size:14px;
+	line-height:18px;
+	font-weight:normal;
+	vertical-align:top;
+	letter-spacing:1px;
+	padding:7px 44px 10px;
+	margin:0;
+	border:1px solid #d8d8d8;
+	border-right-width:0;
+}
+.cinema-page .share ul {
+	display:inline-block;
+	vertical-align:top;
+	margin:0 0 0 -3px;
+}
+.cinema-page .share ul li {
+	position:relative;
+	float:left;
+	width:70px;
+	height:35px;
+	vertical-align:top;
+	margin:0 0 0 -1px;
+	border:1px solid #d8d8d8;
+}
+.cinema-page .share ul li a {
+	display:block;
+	width:70px;
+	height:35px;
+}
+.cinema-page .share ul li img {
+	position:absolute;
+	top:0;
+	right:0;
+	bottom:0;
+	left:0;
+	max-width:70px;
+	max-height:35px;
+	margin:auto;
+}

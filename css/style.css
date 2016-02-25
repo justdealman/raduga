@@ -4229,3 +4229,113 @@ path:hover{
 	max-height:35px;
 	margin:auto;
 }
+.section.cinema {
+	background:#2a63a7;
+}
+.section.cinema .core {
+	width:960px;
+	margin:0 auto;
+}
+.section.cinema .nav {
+	margin:0 0 33px;
+}
+.section.cinema .nav li {
+	display:inline-block;
+	vertical-align:top;
+	margin:0 -3px 6px 0;
+}
+.section.cinema .nav li a {
+	display:block;
+	color:#ffffff;
+	font-size:14px;
+	line-height:17px;
+	padding:6px 18px 10px 17px;
+	border:2px solid transparent;
+}
+.section.cinema .nav li.active a {
+	border:2px solid #ffffff;
+}
+.section.cinema .poster {
+	display:none;
+	margin:0 0 20px;
+}
+.section.cinema .poster div {
+	position:relative;
+	display:inline-block;
+	width:258px;
+	height:359px;
+	cursor:pointer;
+	vertical-align:top;
+	margin:0 1px 4px 0;
+}
+.section.cinema .poster div:hover:after {
+	content:'';
+	position:absolute;
+	left:0;
+	top:0;
+	z-index:2;
+	width:100%;
+	height:100%;
+	border:3px solid #aac23e;
+	-moz-box-shadow:border-box;
+	-webkit-box-shadow:border-box;
+	box-sizing:border-box;
+}
+.section.cinema .poster div img {
+	position:absolute;
+	left:0;
+	top:0;
+	width:258px;
+	height:359px;
+}
+.section.cinema .poster ul {
+	display:inline-block;
+	width:480px;
+	vertical-align:top;
+	margin:0 -50px 0 0;
+}
+.section.cinema .poster ul li {
+	position:relative;
+	display:inline-block;
+	width:84px;
+	height:117px;
+	cursor:pointer;
+	vertical-align:top;
+	margin:0 1px 4px 0;
+}
+.section.cinema .poster ul li:hover:after {
+	content:'';
+	position:absolute;
+	left:0;
+	top:0;
+	z-index:2;
+	width:100%;
+	height:100%;
+	border:2px solid #aac23e;
+	-moz-box-shadow:border-box;
+	-webkit-box-shadow:border-box;
+	box-sizing:border-box;
+}
+.section.cinema .poster ul li img {
+	position:absolute;
+	left:0;
+	top:0;
+	width:84px;
+	height:117px;
+}
+.section.cinema h6 {
+	color:#ffffff;
+	font-size:14px;
+	line-height:17px;
+	font-weight:normal;
+	text-align:center;
+	padding:0;
+	margin:0;
+}
+.section.cinema h6 a {
+	color:#ffffff;
+	text-decoration:underline;
+}
+.section.cinema h6 a:hover {
+	text-decoration:none;
+}

@@ -515,6 +515,18 @@ $(document).ready(function() {
 			});
 		});
 	}
+	if ( $('.section.cinema').length > 0 ) {
+		$('.section.cinema .nav li a').bind('click', function(e) {
+			e.preventDefault();
+			$(this).parents('ul').siblings('[data-day="'+$(this).attr('href')+'"]').show().siblings('[data-day]').hide();
+			$(this).parent().addClass('active').siblings().removeClass();
+		}).filter(':first').click();
+		$('.section.cinema .poster [data-film]').bind('click', function(e) {
+			e.preventDefault();
+			$('.cinema-modal .poster [data-film-open="'+$(this).attr('data-film')+'"]').trigger('click');
+			$('.cinema-modal .schedule .nav ul li[data-tab-open="'+eval($('.section.cinema .nav li.active').index()+1)+'"]').trigger('click');
+		});
+	}
 });
 $(window).resize(function() {
 	if ( $('.introduction').length > 0 ) {

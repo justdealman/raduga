@@ -527,6 +527,13 @@ $(document).ready(function() {
 			$('.cinema-modal .schedule .nav ul li[data-tab-open="'+eval($('.section.cinema .nav li.active').index()+1)+'"]').trigger('click');
 		});
 	}
+	if ( $('.soon ul li').size() > 6 ) {
+		$('.soon ul').jcarousel({
+			scroll: 1,
+			animation: 500,
+			wrap: 'circular'
+		});
+	}
 });
 $(window).resize(function() {
 	if ( $('.introduction').length > 0 ) {

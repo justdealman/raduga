@@ -4339,3 +4339,92 @@ path:hover{
 .section.cinema h6 a:hover {
 	text-decoration:none;
 }
+.soon {
+	margin:0 0 50px;
+}
+.soon h5 {
+    font-size:18px;
+    line-height:24px;
+    text-align:center;
+    text-transform:uppercase;
+    padding:0;
+    margin:0 0 29px;
+}
+.soon ul {
+	width:957px;
+	height:218px;
+	margin:0 auto;
+}
+.soon ul li {
+	position:relative;
+	float:left;
+	width:157px;
+	height:218px;
+	cursor:pointer;
+	margin:0 3px 0 0;
+}
+.soon > ul > li:nth-child(6) {
+	margin-right:0;
+}
+.soon ul li span {
+	position:absolute;
+	left:0;
+	top:0;
+	z-index:2;
+	display:block;
+	color:#ffffff;
+	font-size:12px;
+	line-height:16px;
+	padding:4px 9px 5px;
+	background:#aac23e;
+}
+.soon ul li img {
+	position:absolute;
+	left:0;
+	top:0;
+	width:157px;
+	height:218px;
+}
+.soon ul li:hover:after {
+	content:'';
+	position:absolute;
+	left:0;
+	top:0;
+	z-index:2;
+	width:100%;
+	height:100%;
+	border:2px solid #aac23e;
+	-moz-box-shadow:border-box;
+	-webkit-box-shadow:border-box;
+	box-sizing:border-box;
+}
+.soon .jcarousel-container {
+	position:relative;
+	width:957px;
+	height:218px;
+	padding:0 0 70px;
+	margin:0 auto;
+}
+.soon .jcarousel-clip {
+	clear:both;
+	overflow:hidden;
+	width:957px;
+	height:218px;
+}
+.soon .jcarousel-container .jcarousel-prev, .soon .jcarousel-container .jcarousel-next {
+	position:absolute;
+	bottom:0;
+	z-index:10;
+	display:block;
+	width:41px;
+	height:37px;
+	cursor:pointer;
+}
+.soon .jcarousel-container .jcarousel-prev {
+	left:427px;
+	background:url('../img/carousel_navigation.png') no-repeat left top;
+}
+.soon .jcarousel-container .jcarousel-next {
+	right:428px;
+	background:url('../img/carousel_navigation.png') no-repeat left -37px;
+}

@@ -534,6 +534,10 @@ $(document).ready(function() {
 			wrap: 'circular'
 		});
 	}
+	$('.cinema-sub .close, .sub-fade').on('click', function(e) {
+		e.preventDefault();
+		$('.cinema-sub, .sub-fade').stop().fadeOut(250);
+	});
 });
 $(window).resize(function() {
 	if ( $('.introduction').length > 0 ) {

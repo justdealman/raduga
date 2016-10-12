@@ -2859,7 +2859,11 @@ p.bubble:before {
 	max-height:50px;
 	margin:auto;
 }
+.social-panel li.email a {
+	background:url('../img/email-icon.png') no-repeat center center;
+}
 .social-panel .mail {
+	position:relative;
 	color:#6c6c6a;
 	font-size:22px;
 	line-height:25px;
@@ -2877,6 +2881,16 @@ p.bubble:before {
 	display:block;
 	color:#6c6c6a;
 	padding:10px 8px 12px 67px;
+}
+.social-panel .mail span {
+	position:absolute;
+	left:0;
+	top:0;
+	z-index:2;
+	display:block;
+	width:54px;
+	height:47px;
+	cursor:pointer;
 }
 .social-panel .mail a:before {
 	content:'';
@@ -2902,6 +2916,10 @@ p.bubble:before {
 	line-height:16px;
 	text-transform:uppercase;
 	margin:6px 16px 0 0;
+}
+.social-panel ul + .sub {
+	display:block;
+	margin-top:7px;
 }
 .social-panel .sub a {
 	display:block;

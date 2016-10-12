@@ -538,6 +538,11 @@ $(document).ready(function() {
 		e.preventDefault();
 		$('.cinema-sub, .sub-fade').stop().fadeOut(250);
 	});
+	$('.social-panel .mail span').on('click', function(e) {
+		e.preventDefault();
+		$('.social-panel ul').append('<li class="email"><a href="'+$(this).siblings('a').attr('href')+'"></a></li>');
+		$(this).parent().remove();
+	});
 });
 $(window).resize(function() {
 	if ( $('.introduction').length > 0 ) {

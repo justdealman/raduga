@@ -4724,3 +4724,35 @@ path:hover{
 	background:url('../img/galaxy-bg-3.jpg') no-repeat center center;
 	background-size:cover;
 }
+.galaxy-animation {
+	overflow:hidden;
+	position:relative;
+}
+.galaxy-animation .bg {
+	background:url('../img/galaxy-bg.jpg') no-repeat center center !important;
+	background-size:cover !important;
+}
+.galaxy-animation .logo {
+	position:absolute;
+	left:50%;
+	top:50%;
+	z-index:1;
+	margin:-100px 0 0 -474px;
+}
+.galaxy-animation .text {
+	position:absolute;
+	left:50%;
+	top:50%;
+	z-index:1;
+	margin:100px 0 0 -451px;
+}
+.galaxy-animation svg {
+	position:absolute;
+	left:50%;
+	top:50%;
+	margin:-480px 0 0 -960px;
+}
+.galaxy-animation svg path {
+	-webkit-transform-origin:center center;
+	transform-origin:center center;
+}

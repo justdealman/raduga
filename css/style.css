@@ -4620,3 +4620,107 @@ path:hover{
 .cinema-sub h6 a:hover {
 	text-decoration:none;
 }
+
+/* Galaxy index update styles */
+.page-galaxy .header ul li a:hover {
+	background:rgb(254,154,141);
+	background:rgba(254,154,141,0.15);
+}
+.page-galaxy .header ul li.active a {
+	background:rgb(254,154,141);
+}
+.page-galaxy .header button {
+	background:#fee78a;
+	border-color:#fee78a;
+}
+.page-galaxy .header button:hover {
+	color:#080626;
+}
+.page-galaxy .stores .core > ul {
+	clear:both;
+	overflow:hidden;
+	padding:50px 0 86px;
+	margin:0 0 92px;
+	border-bottom:1px solid #d9d9d9;
+}
+.page-galaxy .stores .core > ul li {
+	display:block;
+	float:left;
+	width:240px;
+	padding:208px 0 0;
+	margin:0;
+}
+.page-galaxy .stores .core > ul li:nth-child(1) {
+	color:#2684ae;
+	background:url('../img/galaxy-stores-li-1.png') no-repeat center top;
+}
+.page-galaxy .stores .core > ul li:nth-child(2) {
+	color:#bdd236;
+	background:url('../img/galaxy-stores-li-2.png') no-repeat center 4px;
+}
+.page-galaxy .stores .core > ul li:nth-child(3) {
+	color:#f6ac2d;
+	background:url('../img/galaxy-stores-li-3.png') no-repeat center top;
+}
+.page-galaxy .stores .core > ul li:nth-child(4) {
+	color:#e63622;
+	background:url('../img/galaxy-stores-li-4.png') no-repeat center 4px;
+}
+.page-galaxy .section.special {
+	background:url('../img/galaxy-bg-1.jpg') no-repeat center center;
+	background-size:cover;
+}
+.page-galaxy .section.special h1 {
+	color:#000000;
+}
+.page-galaxy .special .filter ul li a {
+	color:#000000;
+}
+.page-galaxy .special .filter ul li.active a {
+	border-color:#000000;
+}
+.page-galaxy .special .filter button {
+	color:#000000;
+	border-color:#000000;
+}
+.page-galaxy .special .filter button:before {
+	content:url('../img/filter_icon-d.png');
+}
+.page-galaxy .special .search p {
+	border-bottom-color:#000000;
+}
+.page-galaxy .special .search p input {
+	color:#000000;
+}
+.page-galaxy ::-webkit-input-placeholder {
+	color:rgba(0,0,0,0.7);
+}
+.page-galaxy :-moz-placeholder {
+	color:rgba(0,0,0,0.7);
+}
+.page-galaxy ::-moz-placeholder {
+	color:rgba(0,0,0,0.7);
+}
+.page-galaxy :-ms-input-placeholder {
+	color:rgba(0,0,0,0.7);
+}
+.page-galaxy .special .search button {
+	background:url('../img/search_icon-d.png') no-repeat left 9px;
+}
+.page-galaxy .section.gallery {
+	background:url('../img/galaxy-bg-2.jpg') no-repeat center center;
+	background-size:cover;
+}
+.page-galaxy .section.gallery h1 {
+	color:#000000;
+}
+.page-galaxy .gallery .slider .prev, .page-galaxy .special .slider .prev {
+	background:url('../img/slider-navigation-d.png') no-repeat left top;
+}
+.page-galaxy .gallery .slider .next, .page-galaxy .special .slider .next {
+	background:url('../img/slider-navigation-d.png') no-repeat right top;
+}
+.page-galaxy .section.contacts {
+	background:url('../img/galaxy-bg-3.jpg') no-repeat center center;
+	background-size:cover;
+}

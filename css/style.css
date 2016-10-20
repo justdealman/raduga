@@ -389,6 +389,19 @@ button::-moz-focus-inner {
 	top:90px;
 	min-height:509px;
 }
+.introduction:after {
+	content:'';
+	position:absolute;
+	left:0;
+	top:0;
+	z-index:20;
+	width:100%;
+	height:100%;
+	background:#ffffff;
+}
+.introduction.visible:after {
+	display:none;
+}
 .introduction .prev, .introduction .next {
 	display:none;
 }

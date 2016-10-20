@@ -33,6 +33,7 @@
 		'width': $('.section').width()+'px',
 		'height': h+'px'
 	});
+	$('.introduction').addClass('visible');
 }
 function indexPanels() {
 	if ( $(window).height() < 602 ) {

@@ -4756,3 +4756,20 @@ path:hover{
 	-webkit-transform-origin:center center;
 	transform-origin:center center;
 }
+@media all and (max-height: 900px) {
+	.page-galaxy .stores .core > ul {
+		margin:0 0 50px;
+	}
+}
+@media all and (max-height: 820px) {
+	.page-galaxy .stores .core > ul {
+		padding:30px 0 66px;
+		margin:0 0 40px;
+	}
+}
+@media all and (max-height: 760px) {
+	.page-galaxy .stores .core > ul {
+		padding:30px 0 56px;
+		margin:0 0 30px;
+	}
+}

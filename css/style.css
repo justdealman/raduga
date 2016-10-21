@@ -4652,32 +4652,49 @@ path:hover{
 .page-galaxy .stores .core > ul {
 	clear:both;
 	overflow:hidden;
+	width:1000px;
 	padding:50px 0 86px;
-	margin:0 0 92px;
+	margin:0 0 92px -20px;
 	border-bottom:1px solid #d9d9d9;
 }
 .page-galaxy .stores .core > ul li {
-	display:block;
+	position:relative;
 	float:left;
-	width:240px;
+	display:block;
+	width:250px;
 	padding:208px 0 0;
 	margin:0;
 }
+.page-galaxy .stores .core > ul li svg {
+	position:absolute;
+	left:0;
+	top:-11px;
+}
+.page-galaxy .stores .core > ul li svg path {
+	-webkit-transform-origin:center center;
+	transform-origin:center center;
+}
 .page-galaxy .stores .core > ul li:nth-child(1) {
 	color:#2684ae;
-	background:url('../img/galaxy-stores-li-1.png') no-repeat center top;
+	background:url('../img/galaxy-stores-li-1.png') no-repeat center -11px;
 }
 .page-galaxy .stores .core > ul li:nth-child(2) {
 	color:#bdd236;
-	background:url('../img/galaxy-stores-li-2.png') no-repeat center 4px;
+	background:url('../img/galaxy-stores-li-2.png') no-repeat center -9px;
+}
+.page-galaxy .stores .core > ul li:nth-child(2) svg {
+	top:-9px;
 }
 .page-galaxy .stores .core > ul li:nth-child(3) {
 	color:#f6ac2d;
-	background:url('../img/galaxy-stores-li-3.png') no-repeat center top;
+	background:url('../img/galaxy-stores-li-3.png') no-repeat center -11px;
 }
 .page-galaxy .stores .core > ul li:nth-child(4) {
 	color:#e63622;
-	background:url('../img/galaxy-stores-li-4.png') no-repeat center 4px;
+	background:url('../img/galaxy-stores-li-4.png') no-repeat center -9px;
+}
+.page-galaxy .stores .core > ul li:nth-child(4) svg {
+	top:-9px;
 }
 .page-galaxy .section.special {
 	background:url('../img/galaxy-bg-1.jpg') no-repeat center center;

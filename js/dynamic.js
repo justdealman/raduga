@@ -490,10 +490,9 @@ $(document).ready(function() {
 			event.stopPropagation();
 		});
 	}
-	if ( $('.cinema-page .big-poster').length > 0 ) {
+	if ( $('.cinema-page').length > 0 ) {
 		$('.cinema-page').css({
-			'padding-top': $('.big-poster').attr('data-padding')+'px',
-			'background': 'url("'+$('.big-poster').attr('src')+'") no-repeat center 134px fixed'
+			'margin-top': $('.cinema-page').attr('data-padding')+'px',
 		});
 	}
 	if ( $('.cinema-page').length > 0 ) {
@@ -629,5 +628,24 @@ $(function() {
 				scale: 1
 			}, { duration: 200 });
 		});
+	});
+});
+$(function() {
+	$('cinema-bg-slider .item img').each(function() {
+		$(this).parent().css({
+			'background': 'url('+$(this).attr('href')+') no-repeat center top'
+		});
+	});
+	$('.cinema-bg-slider').slick({
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		infinite: true,
+		arrows: false,
+		dots: true,
+		draggable: false,
+		fade: true,
+		cssEase: 'linear',
+		autoplay: true,
+		autoplaySpeed: 5000
 	});
 });

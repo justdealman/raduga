@@ -631,11 +631,6 @@ $(function() {
 	});
 });
 $(function() {
-	$('cinema-bg-slider .item img').each(function() {
-		$(this).parent().css({
-			'background': 'url('+$(this).attr('href')+') no-repeat center top'
-		});
-	});
 	$('.cinema-bg-slider').slick({
 		slidesToShow: 1,
 		slidesToScroll: 1,

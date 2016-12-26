@@ -4809,10 +4809,11 @@ path:hover{
 }
 .cinema-bg-slider {
   position:fixed;
-  left:0;
+  left:50%;
   top:0;
-  width:100%;
+  width:1920px;
   height:100%;
+  margin-left:-960px;
 }
 .cinema-bg-slider .slick-dots {
   position:absolute;
